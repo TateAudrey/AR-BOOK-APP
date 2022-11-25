@@ -16,6 +16,7 @@
 		C679A5182930AA97001CFF4A /* AR_BOOK_APPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5172930AA97001CFF4A /* AR_BOOK_APPTests.swift */; };
 		C679A5222930AA97001CFF4A /* AR_BOOK_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5212930AA97001CFF4A /* AR_BOOK_APPUITests.swift */; };
 		C679A5242930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */; };
+		C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C679A5312930FA27001CFF4A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		C679A51D2930AA97001CFF4A /* AR-BOOK-APPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "AR-BOOK-APPUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C679A5212930AA97001CFF4A /* AR_BOOK_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BOOK_APPUITests.swift; sourceTree = "<group>"; };
 		C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BOOK_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C679A5312930FA27001CFF4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +100,12 @@
 		C679A5002930AA95001CFF4A /* AR-BOOK-APP */ = {
 			isa = PBXGroup;
 			children = (
-				C679A5012930AA95001CFF4A /* AppDelegate.swift */,
+				C679A5352930FA8B001CFF4A /* Storyboards */,
+				C679A5342930FA4F001CFF4A /* Experiences */,
+				C679A5332930FA43001CFF4A /* AppDelegate */,
+				C679A5302930FA17001CFF4A /* Files */,
 				C679A5032930AA95001CFF4A /* ViewController.swift */,
-				C679A5052930AA95001CFF4A /* Experience.rcproject */,
-				C679A5072930AA95001CFF4A /* Main.storyboard */,
 				C679A50A2930AA97001CFF4A /* Assets.xcassets */,
-				C679A50C2930AA97001CFF4A /* LaunchScreen.storyboard */,
 			);
 			path = "AR-BOOK-APP";
 			sourceTree = "<group>";
@@ -123,6 +125,39 @@
 				C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */,
 			);
 			path = "AR-BOOK-APPUITests";
+			sourceTree = "<group>";
+		};
+		C679A5302930FA17001CFF4A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				C679A5312930FA27001CFF4A /* GoogleService-Info.plist */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
+		C679A5332930FA43001CFF4A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				C679A5012930AA95001CFF4A /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		C679A5342930FA4F001CFF4A /* Experiences */ = {
+			isa = PBXGroup;
+			children = (
+				C679A5052930AA95001CFF4A /* Experience.rcproject */,
+			);
+			path = Experiences;
+			sourceTree = "<group>";
+		};
+		C679A5352930FA8B001CFF4A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C679A50C2930AA97001CFF4A /* LaunchScreen.storyboard */,
+				C679A5072930AA95001CFF4A /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C679A50E2930AA97001CFF4A /* LaunchScreen.storyboard in Resources */,
+				C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */,
 				C679A50B2930AA97001CFF4A /* Assets.xcassets in Resources */,
 				C679A5092930AA95001CFF4A /* Main.storyboard in Resources */,
 			);
@@ -437,7 +473,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q3EPKHGL8X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "AR Book App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Longa Namibia";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -447,12 +483,13 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "na.com.ges.AR-BOOK-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = "na.com.ges.LONGA-NAMIBIA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -472,7 +509,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Q3EPKHGL8X;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "AR Book App";
+				INFOPLIST_KEY_CFBundleDisplayName = "Longa Namibia";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -482,12 +519,13 @@
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "na.com.ges.AR-BOOK-APP";
+				PRODUCT_BUNDLE_IDENTIFIER = "na.com.ges.LONGA-NAMIBIA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
