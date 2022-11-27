@@ -59,7 +59,7 @@ class OnBoardingViewController: UIViewController {
             if pageControl.currentPage == 2 {
                 
                 var newViewController : UIViewController
-                newViewController  = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainID"))
+                newViewController  = (UIStoryboard(name: "Registration", bundle: nil).instantiateViewController(withIdentifier: "RegistrationID"))
                 self.view.removeFromSuperview()
                 Window.rootViewController = newViewController
                 Window.makeKeyAndVisible()

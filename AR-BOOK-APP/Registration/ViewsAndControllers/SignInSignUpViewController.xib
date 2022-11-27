@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInSignUpViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
+            <connections>
+                <outlet property="signInButton" destination="qfe-Ja-NSs" id="8dw-t1-mhS"/>
+                <outlet property="signupButton" destination="bqW-9x-5U6" id="vIu-sw-hFm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fbW-hY-upB">
+                    <rect key="frame" x="83.666666666666686" y="47" width="223" height="52"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="qi1-g0-bEk"/>
+                        <constraint firstAttribute="width" constant="223" id="vsc-Rh-hwM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-bg-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Dei-bk-fHT">
+                    <rect key="frame" x="88.666666666666686" y="137" width="213" height="125"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="213" id="Hx9-mA-l11"/>
+                        <constraint firstAttribute="height" constant="125" id="n1v-kH-5jP"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfe-Ja-NSs">
+                    <rect key="frame" x="77.666666666666686" y="345" width="235" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="azA-NZ-b9d"/>
+                        <constraint firstAttribute="width" constant="235" id="xMF-Ex-K2M"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                        <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signinButtonClick:" destination="-1" eventType="touchUpInside" id="tsd-pF-qOn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqW-9x-5U6">
+                    <rect key="frame" x="77.666666666666686" y="467" width="235" height="54"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="BGi-Be-5h5"/>
+                        <constraint firstAttribute="width" constant="235" id="wqn-Ib-Xbe"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                        <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signupButtonClick:" destination="-1" eventType="touchUpInside" id="rTk-Oa-TBM"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="subject" translatesAutoresizingMaskIntoConstraints="NO" id="tns-M9-mGH">
+                    <rect key="frame" x="105" y="529" width="285" height="315"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="315" id="g2Y-ux-hXV"/>
+                        <constraint firstAttribute="width" constant="285" id="lPV-os-LlH"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6wZ-I2-2n8">
+                    <rect key="frame" x="157" y="420" width="76" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="76" id="YnS-qJ-v9j"/>
+                        <constraint firstAttribute="height" constant="29" id="c2D-JJ-WH0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.047261148689999997" green="0.10158396510000001" blue="0.12941688300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="bqW-9x-5U6" firstAttribute="top" secondItem="6wZ-I2-2n8" secondAttribute="bottom" constant="18" id="17K-lM-556"/>
+                <constraint firstItem="6wZ-I2-2n8" firstAttribute="centerX" secondItem="bqW-9x-5U6" secondAttribute="centerX" id="68M-CI-2lx"/>
+                <constraint firstItem="Dei-bk-fHT" firstAttribute="top" secondItem="fbW-hY-upB" secondAttribute="bottom" constant="38" id="9Bp-aj-wTv"/>
+                <constraint firstItem="6wZ-I2-2n8" firstAttribute="top" secondItem="qfe-Ja-NSs" secondAttribute="bottom" constant="21" id="AxA-Fy-ZOb"/>
+                <constraint firstItem="Dei-bk-fHT" firstAttribute="centerX" secondItem="fbW-hY-upB" secondAttribute="centerX" id="Dfq-tH-5Zt"/>
+                <constraint firstItem="fbW-hY-upB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="F23-Vq-YA7"/>
+                <constraint firstItem="bqW-9x-5U6" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-289" id="IRx-Jj-I4X"/>
+                <constraint firstAttribute="bottom" secondItem="tns-M9-mGH" secondAttribute="bottom" id="JjK-b8-wJj"/>
+                <constraint firstItem="qfe-Ja-NSs" firstAttribute="centerX" secondItem="6wZ-I2-2n8" secondAttribute="centerX" id="ePT-hU-aSy"/>
+                <constraint firstItem="fbW-hY-upB" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="fbI-Vk-XgT"/>
+                <constraint firstItem="bqW-9x-5U6" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="tZP-un-zrb"/>
+                <constraint firstItem="tns-M9-mGH" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="xIs-iF-1Wx"/>
+            </constraints>
+            <point key="canvasLocation" x="-338.46153846153845" y="10.663507109004739"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="no-bg-logo" width="1024" height="1024"/>
+        <image name="subject" width="996" height="1798"/>
+    </resources>
+</document>

@@ -9,7 +9,7 @@
         <!--Welcome View Controller-->
         <scene sceneID="As7-9a-5AR">
             <objects>
-                <viewController storyboardIdentifier="OnBoardingID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wnq-JI-rhP" customClass="WelcomeViewController" customModule="AugmentedRealityMuseumApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="OnBoardingID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wnq-JI-rhP" customClass="WelcomeViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <connections>
                         <segue destination="Drp-J2-mUq" kind="show" identifier="gotoOnBoardingScreen" id="bzC-76-EFN"/>
                     </connections>
@@ -21,12 +21,25 @@
         <!--On Boarding View Controller-->
         <scene sceneID="961-Mf-JRG">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Drp-J2-mUq" customClass="OnBoardingViewController" customModule="AugmentedRealityMuseumApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="Drp-J2-mUq" customClass="OnBoardingViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="PIy-AS-clg"/>
+                    <connections>
+                        <segue destination="or3-PG-G43" kind="show" identifier="gotoRegistration" id="gbE-1J-SYG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DCk-5N-ppw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1218" y="137"/>
+        </scene>
+        <!--Registration-->
+        <scene sceneID="cfE-Rx-0Z8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Registration" id="or3-PG-G43" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="iqF-mx-KSk"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jlu-79-rDp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2092" y="-67"/>
         </scene>
     </scenes>
 </document>

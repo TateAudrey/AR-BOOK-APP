@@ -20,6 +20,13 @@
 		C652B1E62933826B00A65212 /* OnBoardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C652B1E42933826B00A65212 /* OnBoardingCollectionViewCell.xib */; };
 		C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818C62933D2BD0062D4E4 /* HomeViewController.swift */; };
 		C67818C92933D2BD0062D4E4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818C72933D2BD0062D4E4 /* HomeViewController.xib */; };
+		C67818CD2933D47F0062D4E4 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818CB2933D47F0062D4E4 /* HomeCollectionViewCell.swift */; };
+		C67818CE2933D47F0062D4E4 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818CC2933D47F0062D4E4 /* HomeCollectionViewCell.xib */; };
+		C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818D12933D4FE0062D4E4 /* SignInViewController.swift */; };
+		C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818D22933D4FE0062D4E4 /* SignInViewController.xib */; };
+		C67818D72933D7310062D4E4 /* SignInSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818D52933D7310062D4E4 /* SignInSignUpViewController.swift */; };
+		C67818D82933D7310062D4E4 /* SignInSignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818D62933D7310062D4E4 /* SignInSignUpViewController.xib */; };
+		C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67818D92933D90F0062D4E4 /* Registration.storyboard */; };
 		C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5012930AA95001CFF4A /* AppDelegate.swift */; };
 		C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C679A5052930AA95001CFF4A /* Experience.rcproject */; };
 		C679A5092930AA95001CFF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C679A5072930AA95001CFF4A /* Main.storyboard */; };
@@ -70,6 +77,13 @@
 		C652B1E42933826B00A65212 /* OnBoardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingCollectionViewCell.xib; sourceTree = "<group>"; };
 		C67818C62933D2BD0062D4E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C67818C72933D2BD0062D4E4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C67818CB2933D47F0062D4E4 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		C67818CC2933D47F0062D4E4 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		C67818D12933D4FE0062D4E4 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		C67818D22933D4FE0062D4E4 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInViewController.xib; sourceTree = "<group>"; };
+		C67818D52933D7310062D4E4 /* SignInSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSignUpViewController.swift; sourceTree = "<group>"; };
+		C67818D62933D7310062D4E4 /* SignInSignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInSignUpViewController.xib; sourceTree = "<group>"; };
+		C67818D92933D90F0062D4E4 /* Registration.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Registration.storyboard; sourceTree = "<group>"; };
 		C679A4FE2930AA95001CFF4A /* AR-BOOK-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-BOOK-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C679A5012930AA95001CFF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C679A5052930AA95001CFF4A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -192,6 +206,7 @@
 		C67818C42933D2840062D4E4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				C67818CA2933D4450062D4E4 /* Cells */,
 				C67818C52933D28F0062D4E4 /* ViewsAndControllers */,
 			);
 			path = Home;
@@ -202,6 +217,34 @@
 			children = (
 				C67818C62933D2BD0062D4E4 /* HomeViewController.swift */,
 				C67818C72933D2BD0062D4E4 /* HomeViewController.xib */,
+			);
+			path = ViewsAndControllers;
+			sourceTree = "<group>";
+		};
+		C67818CA2933D4450062D4E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				C67818CB2933D47F0062D4E4 /* HomeCollectionViewCell.swift */,
+				C67818CC2933D47F0062D4E4 /* HomeCollectionViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		C67818CF2933D4CE0062D4E4 /* Registration */ = {
+			isa = PBXGroup;
+			children = (
+				C67818D02933D4D60062D4E4 /* ViewsAndControllers */,
+			);
+			path = Registration;
+			sourceTree = "<group>";
+		};
+		C67818D02933D4D60062D4E4 /* ViewsAndControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67818D12933D4FE0062D4E4 /* SignInViewController.swift */,
+				C67818D22933D4FE0062D4E4 /* SignInViewController.xib */,
+				C67818D52933D7310062D4E4 /* SignInSignUpViewController.swift */,
+				C67818D62933D7310062D4E4 /* SignInSignUpViewController.xib */,
 			);
 			path = ViewsAndControllers;
 			sourceTree = "<group>";
@@ -229,6 +272,7 @@
 		C679A5002930AA95001CFF4A /* AR-BOOK-APP */ = {
 			isa = PBXGroup;
 			children = (
+				C67818CF2933D4CE0062D4E4 /* Registration */,
 				C67818C42933D2840062D4E4 /* Home */,
 				C6AE7FE7293396920031CE4C /* Info.plist */,
 				C652B1E0293381F300A65212 /* Globals */,
@@ -291,6 +335,7 @@
 				C679A50C2930AA97001CFF4A /* LaunchScreen.storyboard */,
 				C679A5072930AA95001CFF4A /* Main.storyboard */,
 				C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */,
+				C67818D92933D90F0062D4E4 /* Registration.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -415,9 +460,13 @@
 				C652B1E62933826B00A65212 /* OnBoardingCollectionViewCell.xib in Resources */,
 				C61B851329337FE600E0D5CA /* OnBoardingViewController.xib in Resources */,
 				C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */,
+				C67818D82933D7310062D4E4 /* SignInSignUpViewController.xib in Resources */,
 				C679A50B2930AA97001CFF4A /* Assets.xcassets in Resources */,
+				C67818CE2933D47F0062D4E4 /* HomeCollectionViewCell.xib in Resources */,
 				C679A5092930AA95001CFF4A /* Main.storyboard in Resources */,
 				C61B85172933808A00E0D5CA /* WelcomeViewController.xib in Resources */,
+				C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */,
+				C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */,
 				C6AE7FE6293387A40031CE4C /* OnBoarding.storyboard in Resources */,
 				C67818C92933D2BD0062D4E4 /* HomeViewController.xib in Resources */,
 			);
@@ -449,12 +498,15 @@
 				C61B85162933808A00E0D5CA /* WelcomeViewController.swift in Sources */,
 				C652B1E52933826B00A65212 /* OnBoardingCollectionViewCell.swift in Sources */,
 				C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */,
+				C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
 				C652B1DD293381A500A65212 /* AppStateRepository.swift in Sources */,
 				C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */,
 				C652B1DA2933816100A65212 /* ButtonTheme.swift in Sources */,
 				C652B1E22933820300A65212 /* Globals.swift in Sources */,
 				C61B851229337FE600E0D5CA /* OnBoardingViewController.swift in Sources */,
+				C67818D72933D7310062D4E4 /* SignInSignUpViewController.swift in Sources */,
+				C67818CD2933D47F0062D4E4 /* HomeCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

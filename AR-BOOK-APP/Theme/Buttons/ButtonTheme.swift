@@ -25,4 +25,11 @@ extension UIButton {
         layer.cornerRadius = layer.bounds.size.height/2
     }
     
+    func RoundButtonOutline(){
+        
+        layer.cornerRadius = layer.bounds.size.height/2
+        layer.borderWidth = 2
+        layer.borderColor = UIColor.white.cgColor
+    }
+    
 }
