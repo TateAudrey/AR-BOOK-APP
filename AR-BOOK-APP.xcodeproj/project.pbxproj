@@ -18,6 +18,8 @@
 		C652B1E22933820300A65212 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652B1E12933820300A65212 /* Globals.swift */; };
 		C652B1E52933826B00A65212 /* OnBoardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C652B1E32933826B00A65212 /* OnBoardingCollectionViewCell.swift */; };
 		C652B1E62933826B00A65212 /* OnBoardingCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C652B1E42933826B00A65212 /* OnBoardingCollectionViewCell.xib */; };
+		C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818C62933D2BD0062D4E4 /* HomeViewController.swift */; };
+		C67818C92933D2BD0062D4E4 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818C72933D2BD0062D4E4 /* HomeViewController.xib */; };
 		C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5012930AA95001CFF4A /* AppDelegate.swift */; };
 		C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C679A5052930AA95001CFF4A /* Experience.rcproject */; };
 		C679A5092930AA95001CFF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C679A5072930AA95001CFF4A /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 		C652B1E12933820300A65212 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		C652B1E32933826B00A65212 /* OnBoardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		C652B1E42933826B00A65212 /* OnBoardingCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnBoardingCollectionViewCell.xib; sourceTree = "<group>"; };
+		C67818C62933D2BD0062D4E4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C67818C72933D2BD0062D4E4 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		C679A4FE2930AA95001CFF4A /* AR-BOOK-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-BOOK-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C679A5012930AA95001CFF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C679A5052930AA95001CFF4A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -185,6 +189,23 @@
 			path = Globals;
 			sourceTree = "<group>";
 		};
+		C67818C42933D2840062D4E4 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C67818C52933D28F0062D4E4 /* ViewsAndControllers */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C67818C52933D28F0062D4E4 /* ViewsAndControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67818C62933D2BD0062D4E4 /* HomeViewController.swift */,
+				C67818C72933D2BD0062D4E4 /* HomeViewController.xib */,
+			);
+			path = ViewsAndControllers;
+			sourceTree = "<group>";
+		};
 		C679A4F52930AA95001CFF4A = {
 			isa = PBXGroup;
 			children = (
@@ -208,6 +229,7 @@
 		C679A5002930AA95001CFF4A /* AR-BOOK-APP */ = {
 			isa = PBXGroup;
 			children = (
+				C67818C42933D2840062D4E4 /* Home */,
 				C6AE7FE7293396920031CE4C /* Info.plist */,
 				C652B1E0293381F300A65212 /* Globals */,
 				C652B1DB2933819100A65212 /* AppState */,
@@ -397,6 +419,7 @@
 				C679A5092930AA95001CFF4A /* Main.storyboard in Resources */,
 				C61B85172933808A00E0D5CA /* WelcomeViewController.xib in Resources */,
 				C6AE7FE6293387A40031CE4C /* OnBoarding.storyboard in Resources */,
+				C67818C92933D2BD0062D4E4 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +451,7 @@
 				C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
 				C652B1DD293381A500A65212 /* AppStateRepository.swift in Sources */,
+				C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */,
 				C652B1DA2933816100A65212 /* ButtonTheme.swift in Sources */,
 				C652B1E22933820300A65212 /* Globals.swift in Sources */,
 				C61B851229337FE600E0D5CA /* OnBoardingViewController.swift in Sources */,
