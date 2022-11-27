@@ -9,10 +9,24 @@
         <!--Sign In Sign Up View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="RegistrationID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SignInSignUpViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController"/>
+                <viewController storyboardIdentifier="RegistrationID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SignInSignUpViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="iQU-so-0yX" kind="show" identifier="gotosignin" id="LQ9-8o-ymD"/>
+                    </connections>
+                </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="138" y="4"/>
+        </scene>
+        <!--Sign In View Controller-->
+        <scene sceneID="lEV-Si-ppH">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="iQU-so-0yX" customClass="SignInViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="vGo-I3-6D2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jCm-zQ-e3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1133" y="9"/>
         </scene>
     </scenes>
 </document>

@@ -63,6 +63,9 @@
                     <color key="tintColor" red="0.95661884549999998" green="0.95558542010000003" blue="0.97366195919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Forgot Password?"/>
+                    <connections>
+                        <action selector="forgotPassword:" destination="-1" eventType="touchUpInside" id="o1W-KI-VV0"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXZ-DK-F79">
                     <rect key="frame" x="77.666666666666686" y="570" width="235" height="54"/>
@@ -75,6 +78,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Sign In">
                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="signInButonClick:" destination="-1" eventType="touchUpInside" id="kL0-tc-EZh"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
@@ -95,7 +101,7 @@
                 <constraint firstItem="dFz-11-mIf" firstAttribute="top" secondItem="9Nv-DN-pxS" secondAttribute="bottom" constant="38" id="rDD-fr-MSM"/>
                 <constraint firstItem="GND-du-vdH" firstAttribute="leading" secondItem="inh-gJ-TNY" secondAttribute="leading" id="xej-Ux-vhC"/>
             </constraints>
-            <point key="canvasLocation" x="42" y="24"/>
+            <point key="canvasLocation" x="-263" y="6"/>
         </view>
     </objects>
     <resources>
