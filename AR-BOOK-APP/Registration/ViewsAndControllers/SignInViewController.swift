@@ -46,8 +46,21 @@ class SignInViewController: UIViewController {
     
     @IBAction func signInButonClick(_ sender: Any) {
         
+        
         let loading = UIElement.addLoadingView(view: view)
         view.addSubview(loading)
         view.isUserInteractionEnabled = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+           
+            
+            loading.removeFromSuperview()
+            self.view.isUserInteractionEnabled = true
+            self.navigationController?.isNavigationBarHidden = false
+            
+        }
+        
+        
+       
     }
 }
