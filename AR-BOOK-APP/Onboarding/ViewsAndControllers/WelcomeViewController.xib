@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
             <connections>
+                <outlet property="getStartedButton" destination="soO-1V-Ic6" id="QuF-ND-OTb"/>
                 <outlet property="view" destination="xDA-bC-HTZ" id="cuJ-Lk-rYn"/>
             </connections>
         </placeholder>
@@ -22,7 +23,7 @@
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome-bg" translatesAutoresizingMaskIntoConstraints="NO" id="4JX-CW-GGh">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                 </imageView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-on-GSA">
+                <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-on-GSA">
                     <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-XG-zOy">
@@ -35,10 +36,10 @@
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="D7D-GM-yDn">
-                            <rect key="frame" x="47" y="246" width="296" height="83"/>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="no-bg-logo" translatesAutoresizingMaskIntoConstraints="NO" id="D7D-GM-yDn">
+                            <rect key="frame" x="47" y="179" width="296" height="315"/>
                             <constraints>
-                                <constraint firstAttribute="height" constant="83" id="E5Z-Yw-p5e"/>
+                                <constraint firstAttribute="height" constant="315" id="E5Z-Yw-p5e"/>
                                 <constraint firstAttribute="width" constant="296" id="mGx-iC-JdN"/>
                             </constraints>
                         </imageView>
@@ -53,13 +54,16 @@
                             <buttonConfiguration key="configuration" style="plain" title="Get Started">
                                 <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                             </buttonConfiguration>
+                            <connections>
+                                <action selector="getStartedButtonClick:" destination="-1" eventType="touchUpInside" id="09U-JM-wmD"/>
+                            </connections>
                         </button>
                     </subviews>
-                    <color key="backgroundColor" white="0.0" alpha="0.80755926639999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.55061060070325263" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="M8J-XG-zOy" firstAttribute="top" secondItem="bCg-on-GSA" secondAttribute="top" constant="52" id="2Be-hc-TOU"/>
                         <constraint firstItem="M8J-XG-zOy" firstAttribute="centerX" secondItem="bCg-on-GSA" secondAttribute="centerX" id="2ZR-f3-8Er"/>
-                        <constraint firstItem="D7D-GM-yDn" firstAttribute="top" secondItem="M8J-XG-zOy" secondAttribute="bottom" constant="142" id="5Js-vb-rVS"/>
+                        <constraint firstItem="D7D-GM-yDn" firstAttribute="top" secondItem="M8J-XG-zOy" secondAttribute="bottom" constant="75" id="5Js-vb-rVS"/>
                         <constraint firstItem="soO-1V-Ic6" firstAttribute="centerX" secondItem="bCg-on-GSA" secondAttribute="centerX" id="Ya9-82-sXT"/>
                         <constraint firstItem="D7D-GM-yDn" firstAttribute="centerX" secondItem="bCg-on-GSA" secondAttribute="centerX" id="ieJ-C6-FcU"/>
                         <constraint firstAttribute="bottom" secondItem="soO-1V-Ic6" secondAttribute="bottom" constant="90" id="jvU-hS-TwZ"/>
@@ -78,12 +82,12 @@
                 <constraint firstItem="4JX-CW-GGh" firstAttribute="trailing" secondItem="GmE-JM-keJ" secondAttribute="trailing" id="ucq-Gu-eu8"/>
                 <constraint firstItem="bCg-on-GSA" firstAttribute="top" secondItem="xDA-bC-HTZ" secondAttribute="top" id="zvt-bK-lVk"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="97"/>
+            <point key="canvasLocation" x="318" y="-48"/>
         </view>
     </objects>
     <resources>
-        <image name="text" width="293" height="92"/>
-        <image name="welcome-bg" width="3456" height="5184"/>
+        <image name="no-bg-logo" width="1024" height="1024"/>
+        <image name="welcome-bg" width="1856" height="1860"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

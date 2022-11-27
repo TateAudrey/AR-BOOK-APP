@@ -65,6 +65,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="image1" width="3000" height="2000"/>
+        <image name="image1" width="1716" height="1390"/>
     </resources>
 </document>

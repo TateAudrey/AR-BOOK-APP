@@ -10,6 +10,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
             <connections>
+                <outlet property="collectionView" destination="cHe-Gc-4s1" id="fZq-WN-3WP"/>
+                <outlet property="nextButton" destination="o1E-Pk-Omf" id="ot5-nb-Yd8"/>
+                <outlet property="pageControl" destination="InV-Xm-VVa" id="8sZ-Ot-B9S"/>
                 <outlet property="view" destination="u8A-5r-L9o" id="dMB-WY-dK2"/>
             </connections>
         </placeholder>
@@ -44,10 +47,13 @@
                     <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" image="arrow.forward" catalog="system"/>
+                    <connections>
+                        <action selector="nextButtonClick:" destination="-1" eventType="touchUpInside" id="H4w-5f-QQI"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Mo2-xq-sp6"/>
-            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.047261148689999997" green="0.10158396510000001" blue="0.12941688300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
                 <constraint firstItem="cHe-Gc-4s1" firstAttribute="leading" secondItem="Mo2-xq-sp6" secondAttribute="leading" id="0o8-M5-w1W"/>
                 <constraint firstItem="o1E-Pk-Omf" firstAttribute="centerY" secondItem="InV-Xm-VVa" secondAttribute="centerY" id="60y-yc-yN8"/>
@@ -58,7 +64,7 @@
                 <constraint firstItem="Mo2-xq-sp6" firstAttribute="trailing" secondItem="o1E-Pk-Omf" secondAttribute="trailing" constant="30" id="thB-yr-cRm"/>
                 <constraint firstItem="InV-Xm-VVa" firstAttribute="centerX" secondItem="cHe-Gc-4s1" secondAttribute="centerX" id="u2n-AB-IaC"/>
             </constraints>
-            <point key="canvasLocation" x="26" y="110"/>
+            <point key="canvasLocation" x="-80" y="47"/>
         </view>
     </objects>
     <resources>

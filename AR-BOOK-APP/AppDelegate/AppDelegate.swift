@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController : UIViewController?
         
         
-        initialViewController  = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainID"))
+        initialViewController  = (UIStoryboard(name: "OnBoarding", bundle: nil).instantiateViewController(withIdentifier: "OnBoardingID"))
         
         self.window?.rootViewController = initialViewController
         self.window?.makeKeyAndVisible()
