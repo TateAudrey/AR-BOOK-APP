@@ -32,6 +32,8 @@
 		C67818E32933E16A0062D4E4 /* UIElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818E22933E16A0062D4E4 /* UIElement.swift */; };
 		C67818E52933FFB60062D4E4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67818E42933FFB60062D4E4 /* Home.storyboard */; };
 		C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818E7293402F50062D4E4 /* HomeScreenItem.swift */; };
+		C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818EB293406FE0062D4E4 /* ProfileViewController.swift */; };
+		C67818EE293406FE0062D4E4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818EC293406FE0062D4E4 /* ProfileViewController.xib */; };
 		C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5012930AA95001CFF4A /* AppDelegate.swift */; };
 		C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C679A5052930AA95001CFF4A /* Experience.rcproject */; };
 		C679A5092930AA95001CFF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C679A5072930AA95001CFF4A /* Main.storyboard */; };
@@ -94,6 +96,8 @@
 		C67818E22933E16A0062D4E4 /* UIElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIElement.swift; sourceTree = "<group>"; };
 		C67818E42933FFB60062D4E4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		C67818E7293402F50062D4E4 /* HomeScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenItem.swift; sourceTree = "<group>"; };
+		C67818EB293406FE0062D4E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		C67818EC293406FE0062D4E4 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		C679A4FE2930AA95001CFF4A /* AR-BOOK-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-BOOK-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C679A5012930AA95001CFF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C679A5052930AA95001CFF4A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -293,6 +297,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		C67818E9293406CC0062D4E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				C67818EA293406D30062D4E4 /* ViewsAndControllers */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		C67818EA293406D30062D4E4 /* ViewsAndControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67818EB293406FE0062D4E4 /* ProfileViewController.swift */,
+				C67818EC293406FE0062D4E4 /* ProfileViewController.xib */,
+			);
+			path = ViewsAndControllers;
+			sourceTree = "<group>";
+		};
 		C679A4F52930AA95001CFF4A = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +337,7 @@
 		C679A5002930AA95001CFF4A /* AR-BOOK-APP */ = {
 			isa = PBXGroup;
 			children = (
+				C67818E9293406CC0062D4E4 /* Profile */,
 				C67818E12933E15B0062D4E4 /* General */,
 				C67818DB2933DEBE0062D4E4 /* SupplementaryViews */,
 				C67818CF2933D4CE0062D4E4 /* Registration */,
@@ -513,6 +535,7 @@
 				C67818CE2933D47F0062D4E4 /* HomeCollectionViewCell.xib in Resources */,
 				C679A5092930AA95001CFF4A /* Main.storyboard in Resources */,
 				C61B85172933808A00E0D5CA /* WelcomeViewController.xib in Resources */,
+				C67818EE293406FE0062D4E4 /* ProfileViewController.xib in Resources */,
 				C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */,
 				C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */,
 				C67818E02933DF470062D4E4 /* LoadingView.xib in Resources */,
@@ -548,6 +571,7 @@
 				C61B85162933808A00E0D5CA /* WelcomeViewController.swift in Sources */,
 				C652B1E52933826B00A65212 /* OnBoardingCollectionViewCell.swift in Sources */,
 				C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */,
+				C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */,
 				C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */,
 				C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
