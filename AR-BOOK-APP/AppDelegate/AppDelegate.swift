@@ -6,35 +6,37 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        initialViewController()
+        FirebaseApp.configure()
         
         return true
     }
-
-    func applicationWillResignActive(_ application: UIApplication) {
+    
+    private func initialViewController() {
+        //Set initial view controllers
+        window = UIWindow(frame: UIScreen.main.bounds)
         
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
+        var initialViewController : UIViewController?
         
-    }
-
-    func applicationWillEnterForeground(_ application: UIApplication) {
-      
-    }
-
-    func applicationDidBecomeActive(_ application: UIApplication) {
         
+        initialViewController  = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainID"))
+        
+        self.window?.rootViewController = initialViewController
+        self.window?.makeKeyAndVisible()
     }
-
-
+    
+    
 }
+
+
 

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="xDA-bC-HTZ" id="cuJ-Lk-rYn"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xDA-bC-HTZ">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcome-bg" translatesAutoresizingMaskIntoConstraints="NO" id="4JX-CW-GGh">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bCg-on-GSA">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8J-XG-zOy">
+                            <rect key="frame" x="83.666666666666686" y="52" width="223" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="223" id="0V6-dh-fUH"/>
+                                <constraint firstAttribute="height" constant="52" id="kOZ-cn-N2l"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="text" translatesAutoresizingMaskIntoConstraints="NO" id="D7D-GM-yDn">
+                            <rect key="frame" x="47" y="246" width="296" height="83"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="83" id="E5Z-Yw-p5e"/>
+                                <constraint firstAttribute="width" constant="296" id="mGx-iC-JdN"/>
+                            </constraints>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="soO-1V-Ic6">
+                            <rect key="frame" x="77.666666666666686" y="700" width="235" height="54"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="235" id="iKn-al-8Tl"/>
+                                <constraint firstAttribute="height" constant="54" id="pai-jZ-23g"/>
+                            </constraints>
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Get Started">
+                                <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.80755926639999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="M8J-XG-zOy" firstAttribute="top" secondItem="bCg-on-GSA" secondAttribute="top" constant="52" id="2Be-hc-TOU"/>
+                        <constraint firstItem="M8J-XG-zOy" firstAttribute="centerX" secondItem="bCg-on-GSA" secondAttribute="centerX" id="2ZR-f3-8Er"/>
+                        <constraint firstItem="D7D-GM-yDn" firstAttribute="top" secondItem="M8J-XG-zOy" secondAttribute="bottom" constant="142" id="5Js-vb-rVS"/>
+                        <constraint firstItem="soO-1V-Ic6" firstAttribute="centerX" secondItem="bCg-on-GSA" secondAttribute="centerX" id="Ya9-82-sXT"/>
+                        <constraint firstItem="D7D-GM-yDn" firstAttribute="centerX" secondItem="bCg-on-GSA" secondAttribute="centerX" id="ieJ-C6-FcU"/>
+                        <constraint firstAttribute="bottom" secondItem="soO-1V-Ic6" secondAttribute="bottom" constant="90" id="jvU-hS-TwZ"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="GmE-JM-keJ"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="4JX-CW-GGh" firstAttribute="top" secondItem="xDA-bC-HTZ" secondAttribute="top" id="HwF-h2-r89"/>
+                <constraint firstItem="bCg-on-GSA" firstAttribute="leading" secondItem="GmE-JM-keJ" secondAttribute="leading" id="T5n-rp-Chk"/>
+                <constraint firstAttribute="bottom" secondItem="bCg-on-GSA" secondAttribute="bottom" id="UyW-Ye-Nba"/>
+                <constraint firstItem="4JX-CW-GGh" firstAttribute="leading" secondItem="GmE-JM-keJ" secondAttribute="leading" id="cEY-nk-C4H"/>
+                <constraint firstItem="bCg-on-GSA" firstAttribute="trailing" secondItem="GmE-JM-keJ" secondAttribute="trailing" id="i7Z-9I-esF"/>
+                <constraint firstAttribute="bottom" secondItem="4JX-CW-GGh" secondAttribute="bottom" id="l6R-Iq-SNO"/>
+                <constraint firstItem="4JX-CW-GGh" firstAttribute="trailing" secondItem="GmE-JM-keJ" secondAttribute="trailing" id="ucq-Gu-eu8"/>
+                <constraint firstItem="bCg-on-GSA" firstAttribute="top" secondItem="xDA-bC-HTZ" secondAttribute="top" id="zvt-bK-lVk"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="text" width="293" height="92"/>
+        <image name="welcome-bg" width="3456" height="5184"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

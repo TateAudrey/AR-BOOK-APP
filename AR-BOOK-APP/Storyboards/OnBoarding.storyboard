@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wnq-JI-rhP">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome View Controller-->
+        <scene sceneID="As7-9a-5AR">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wnq-JI-rhP" customClass="WelcomeViewController" customModule="AugmentedRealityMuseumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="Drp-J2-mUq" kind="show" identifier="gotoOnBoardingScreen" id="bzC-76-EFN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5FF-fO-VsA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="135"/>
+        </scene>
+        <!--On Boarding View Controller-->
+        <scene sceneID="961-Mf-JRG">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="Drp-J2-mUq" customClass="OnBoardingViewController" customModule="AugmentedRealityMuseumApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="PIy-AS-clg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DCk-5N-ppw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1218" y="137"/>
+        </scene>
+    </scenes>
+</document>

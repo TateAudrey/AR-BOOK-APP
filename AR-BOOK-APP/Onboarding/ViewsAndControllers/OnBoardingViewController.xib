@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnBoardingViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="u8A-5r-L9o" id="dMB-WY-dK2"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="u8A-5r-L9o">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="cHe-Gc-4s1">
+                    <rect key="frame" x="0.0" y="47" width="390" height="601.66666666666663"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fWc-yo-h8C">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="InV-Xm-VVa">
+                    <rect key="frame" x="137" y="708.66666666666663" width="116" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26" id="bdr-5T-FYd"/>
+                        <constraint firstAttribute="width" constant="116" id="uyZ-a8-Exu"/>
+                    </constraints>
+                </pageControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o1E-Pk-Omf">
+                    <rect key="frame" x="310" y="697" width="50" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="C6a-YK-rfK"/>
+                        <constraint firstAttribute="width" constant="50" id="r9e-rr-TKk"/>
+                    </constraints>
+                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="arrow.forward" catalog="system"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Mo2-xq-sp6"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cHe-Gc-4s1" firstAttribute="leading" secondItem="Mo2-xq-sp6" secondAttribute="leading" id="0o8-M5-w1W"/>
+                <constraint firstItem="o1E-Pk-Omf" firstAttribute="centerY" secondItem="InV-Xm-VVa" secondAttribute="centerY" id="60y-yc-yN8"/>
+                <constraint firstItem="Mo2-xq-sp6" firstAttribute="bottom" secondItem="o1E-Pk-Omf" secondAttribute="bottom" constant="64" id="IZA-Y5-cEN"/>
+                <constraint firstItem="InV-Xm-VVa" firstAttribute="top" secondItem="cHe-Gc-4s1" secondAttribute="bottom" constant="60" id="bKl-K8-6SB"/>
+                <constraint firstItem="cHe-Gc-4s1" firstAttribute="trailing" secondItem="Mo2-xq-sp6" secondAttribute="trailing" id="bea-EA-DgY"/>
+                <constraint firstItem="cHe-Gc-4s1" firstAttribute="top" secondItem="Mo2-xq-sp6" secondAttribute="top" id="jaQ-LJ-FHJ"/>
+                <constraint firstItem="Mo2-xq-sp6" firstAttribute="trailing" secondItem="o1E-Pk-Omf" secondAttribute="trailing" constant="30" id="thB-yr-cRm"/>
+                <constraint firstItem="InV-Xm-VVa" firstAttribute="centerX" secondItem="cHe-Gc-4s1" secondAttribute="centerX" id="u2n-AB-IaC"/>
+            </constraints>
+            <point key="canvasLocation" x="26" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.forward" catalog="system" width="128" height="95"/>
+    </resources>
+</document>
