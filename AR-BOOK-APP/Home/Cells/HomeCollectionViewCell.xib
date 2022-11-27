@@ -16,10 +16,27 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="146" height="202"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="biology" translatesAutoresizingMaskIntoConstraints="NO" id="ibz-sc-tqs">
+                        <rect key="frame" x="0.0" y="0.0" width="146" height="202"/>
+                    </imageView>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ibz-sc-tqs" secondAttribute="trailing" id="Ttr-HC-0ko"/>
+                <constraint firstItem="ibz-sc-tqs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Zot-KR-AiX"/>
+                <constraint firstAttribute="bottom" secondItem="ibz-sc-tqs" secondAttribute="bottom" id="lBd-Ib-zaA"/>
+                <constraint firstItem="ibz-sc-tqs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="wcO-Ds-9AR"/>
+            </constraints>
             <size key="customSize" width="146" height="202"/>
-            <point key="canvasLocation" x="210.76923076923077" y="74.644549763033169"/>
+            <connections>
+                <outlet property="imageView" destination="ibz-sc-tqs" id="jbm-k6-9tg"/>
+            </connections>
+            <point key="canvasLocation" x="92" y="-14"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="biology" width="766" height="960"/>
+    </resources>
 </document>

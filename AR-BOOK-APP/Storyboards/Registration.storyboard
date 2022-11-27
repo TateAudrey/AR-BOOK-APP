@@ -23,10 +23,23 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="iQU-so-0yX" customClass="SignInViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="vGo-I3-6D2"/>
+                    <connections>
+                        <segue destination="DPb-Aq-los" kind="showDetail" identifier="gotoHome" id="TeB-q5-4w4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jCm-zQ-e3E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1133" y="9"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="jTU-JG-5iX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="DPb-Aq-los" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="cHc-MC-DNd"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I7a-LL-U2c" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1972" y="-168"/>
         </scene>
     </scenes>
 </document>

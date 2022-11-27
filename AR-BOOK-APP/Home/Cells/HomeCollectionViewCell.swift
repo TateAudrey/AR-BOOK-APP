@@ -10,9 +10,14 @@ import UIKit
 class HomeCollectionViewCell: UICollectionViewCell {
     
     //MARK: - Outlets
-
+    @IBOutlet weak var imageView: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        layer.cornerRadius = 10
+        layer.shadowColor = UIColor.white.cgColor
+        layer.shadowRadius = 5
     }
 
 }

@@ -58,7 +58,11 @@ class SignInViewController: UIViewController {
             self.view.isUserInteractionEnabled = true
             self.navigationController?.isNavigationBarHidden = false
             
+            self.performSegue(withIdentifier: "gotoHome", sender: nil)
+            
         }
+        
+        
         
         
        
