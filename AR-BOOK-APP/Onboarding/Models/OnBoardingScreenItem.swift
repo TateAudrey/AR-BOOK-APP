@@ -24,7 +24,7 @@ class OnBoardingScreenItem {
     
     
     static var data: [OnBoardingScreenItem] = [
-        OnBoardingScreenItem(title: "A Different Experience", descriptionText: "Enhancing your learning experience through AR", imgName: "image1"),
+        OnBoardingScreenItem(title: "A Different Experience", descriptionText: "Enhancing your learning experience through Augmented Reality", imgName: "image1"),
         OnBoardingScreenItem(title: "Bring your Book to Life", descriptionText: "Make your main subject come to life using AR", imgName: "image2"),
         OnBoardingScreenItem(title: "Interactive Guide", descriptionText: "Explore your favorite Subject with interactive modes", imgName: "image3"),
     ]
