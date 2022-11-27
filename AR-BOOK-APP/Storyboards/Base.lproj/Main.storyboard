@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6VF-73-mi6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uHE-Wz-ihw">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -7,33 +7,62 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home-->
-        <scene sceneID="jZ8-DK-ThM">
+        <!--Tab Bar Controller-->
+        <scene sceneID="d4Q-tK-CGS">
             <objects>
-                <viewController storyboardIdentifier="MainID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="t1n-BS-ZKA" customClass="HomeViewController" customModule="AugmentedRealityMuseumApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" title="Home" id="OAx-h3-FXS"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9UC-hS-aDa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2584.057971014493" y="860.49107142857144"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="BDG-Hm-SUa">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6VF-73-mi6" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KAK-JD-mgp">
-                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
+                <tabBarController id="uHE-Wz-ihw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c4L-z5-h5c">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
                     <connections>
-                        <segue destination="t1n-BS-ZKA" kind="relationship" relationship="rootViewController" id="5zq-Hg-zSS"/>
+                        <segue destination="vID-Nq-q9p" kind="relationship" relationship="viewControllers" id="X8E-Zo-mcB"/>
+                        <segue destination="pr2-SD-AUh" kind="relationship" relationship="viewControllers" id="0FG-66-fvx"/>
+                        <segue destination="9Zy-Il-6Xu" kind="relationship" relationship="viewControllers" id="gP4-1I-P3Y"/>
                     </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RLj-00-lhA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pPP-Mt-zto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1673.913043478261" y="860.49107142857144"/>
+            <point key="canvasLocation" x="1127" y="1759"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="PWy-bz-3p8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="vID-Nq-q9p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Voc-uH-LeJ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zCP-bC-egM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="1562"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="9F0-mp-LYG">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Profile" id="pr2-SD-AUh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="KsE-10-tVC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLJ-sc-1fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="1758"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="cUR-sM-5nE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="About" id="9Zy-Il-6Xu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="info.bubble" catalog="system" selectedImage="info.bubble.fill" id="IOV-c5-zIF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mtj-AD-RM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1708" y="1933"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="info.bubble" catalog="system" width="128" height="110"/>
+        <image name="info.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="person" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
 </document>

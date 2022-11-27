@@ -34,6 +34,10 @@
 		C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818E7293402F50062D4E4 /* HomeScreenItem.swift */; };
 		C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818EB293406FE0062D4E4 /* ProfileViewController.swift */; };
 		C67818EE293406FE0062D4E4 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818EC293406FE0062D4E4 /* ProfileViewController.xib */; };
+		C67818F329340BA60062D4E4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67818F129340BA60062D4E4 /* AboutViewController.swift */; };
+		C67818F429340BA60062D4E4 /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C67818F229340BA60062D4E4 /* AboutViewController.xib */; };
+		C67818F629340BC00062D4E4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67818F529340BC00062D4E4 /* Profile.storyboard */; };
+		C67818F829340BD70062D4E4 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67818F729340BD70062D4E4 /* About.storyboard */; };
 		C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5012930AA95001CFF4A /* AppDelegate.swift */; };
 		C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C679A5052930AA95001CFF4A /* Experience.rcproject */; };
 		C679A5092930AA95001CFF4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C679A5072930AA95001CFF4A /* Main.storyboard */; };
@@ -98,6 +102,10 @@
 		C67818E7293402F50062D4E4 /* HomeScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenItem.swift; sourceTree = "<group>"; };
 		C67818EB293406FE0062D4E4 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C67818EC293406FE0062D4E4 /* ProfileViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		C67818F129340BA60062D4E4 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		C67818F229340BA60062D4E4 /* AboutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		C67818F529340BC00062D4E4 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		C67818F729340BD70062D4E4 /* About.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = About.storyboard; sourceTree = "<group>"; };
 		C679A4FE2930AA95001CFF4A /* AR-BOOK-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AR-BOOK-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C679A5012930AA95001CFF4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C679A5052930AA95001CFF4A /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
@@ -314,6 +322,23 @@
 			path = ViewsAndControllers;
 			sourceTree = "<group>";
 		};
+		C67818EF29340B7C0062D4E4 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				C67818F029340B810062D4E4 /* ViewsAndControllers */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		C67818F029340B810062D4E4 /* ViewsAndControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C67818F129340BA60062D4E4 /* AboutViewController.swift */,
+				C67818F229340BA60062D4E4 /* AboutViewController.xib */,
+			);
+			path = ViewsAndControllers;
+			sourceTree = "<group>";
+		};
 		C679A4F52930AA95001CFF4A = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +362,7 @@
 		C679A5002930AA95001CFF4A /* AR-BOOK-APP */ = {
 			isa = PBXGroup;
 			children = (
+				C67818EF29340B7C0062D4E4 /* About */,
 				C67818E9293406CC0062D4E4 /* Profile */,
 				C67818E12933E15B0062D4E4 /* General */,
 				C67818DB2933DEBE0062D4E4 /* SupplementaryViews */,
@@ -405,6 +431,8 @@
 				C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */,
 				C67818D92933D90F0062D4E4 /* Registration.storyboard */,
 				C67818E42933FFB60062D4E4 /* Home.storyboard */,
+				C67818F529340BC00062D4E4 /* Profile.storyboard */,
+				C67818F729340BD70062D4E4 /* About.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -526,11 +554,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C679A50E2930AA97001CFF4A /* LaunchScreen.storyboard in Resources */,
+				C67818F829340BD70062D4E4 /* About.storyboard in Resources */,
 				C652B1E62933826B00A65212 /* OnBoardingCollectionViewCell.xib in Resources */,
 				C61B851329337FE600E0D5CA /* OnBoardingViewController.xib in Resources */,
 				C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */,
 				C67818D82933D7310062D4E4 /* SignInSignUpViewController.xib in Resources */,
 				C679A50B2930AA97001CFF4A /* Assets.xcassets in Resources */,
+				C67818F629340BC00062D4E4 /* Profile.storyboard in Resources */,
 				C67818E52933FFB60062D4E4 /* Home.storyboard in Resources */,
 				C67818CE2933D47F0062D4E4 /* HomeCollectionViewCell.xib in Resources */,
 				C679A5092930AA95001CFF4A /* Main.storyboard in Resources */,
@@ -539,6 +569,7 @@
 				C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */,
 				C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */,
 				C67818E02933DF470062D4E4 /* LoadingView.xib in Resources */,
+				C67818F429340BA60062D4E4 /* AboutViewController.xib in Resources */,
 				C6AE7FE6293387A40031CE4C /* OnBoarding.storyboard in Resources */,
 				C67818C92933D2BD0062D4E4 /* HomeViewController.xib in Resources */,
 			);
@@ -574,6 +605,7 @@
 				C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */,
 				C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */,
 				C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */,
+				C67818F329340BA60062D4E4 /* AboutViewController.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
 				C652B1DD293381A500A65212 /* AppStateRepository.swift in Sources */,
 				C67818DE2933DEE70062D4E4 /* LoadingView.swift in Sources */,
