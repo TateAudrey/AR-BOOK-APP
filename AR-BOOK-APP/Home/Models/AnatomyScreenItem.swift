@@ -25,9 +25,7 @@ class AnatomyScreenItem {
         AnatomyScreenItem(imgName: "anatomy3", title: "Human Skeleton"),
         AnatomyScreenItem(imgName: "anatomy4", title: "Female Anatomy"),
         AnatomyScreenItem(imgName: "anatomy5", title: "Human Skull"),
-        AnatomyScreenItem(imgName: "anatomy6", title: "Human Anatomy"),
         AnatomyScreenItem(imgName: "anatomy7", title: "Human Skin"),
-        AnatomyScreenItem(imgName: "anatomy8", title: "Inner Ear"),
         AnatomyScreenItem(imgName: "anatomy9", title: "Abdomen")
         
     ]

@@ -59,26 +59,16 @@ class LoadARViewController: UIViewController {
             // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
-        case "anatomy6":
-           
-            let arAnchor = try! Mouth.loadScene()
-            
-            // Add the herero anchor to the scene
-            arView.scene.anchors.append(arAnchor)
+      
             
         case "anatomy7":
            
-            let arAnchor = try! Mouth.loadScene()
+            let arAnchor = try! Skin.loadScene()
             
             // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
-        case "anatomy8":
-         
-            let arAnchor = try! Mouth.loadScene()
-            
-            // Add the herero anchor to the scene
-            arView.scene.anchors.append(arAnchor)
+       
             
         default:
             

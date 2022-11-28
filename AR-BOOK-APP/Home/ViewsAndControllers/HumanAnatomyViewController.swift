@@ -93,17 +93,9 @@ extension HumanAnatomyViewController: UICollectionViewDelegate, UICollectionView
             performSegue(withIdentifier: "gotoARView", sender: nil)
             
         case 4:
-            arStatusView = "anatomy6"
-            performSegue(withIdentifier: "gotoARView", sender: nil)
-            
-        case 5:
             arStatusView = "anatomy7"
             performSegue(withIdentifier: "gotoARView", sender: nil)
-            
-        case 6:
-            arStatusView = "anatomy8"
-            performSegue(withIdentifier: "gotoARView", sender: nil)
-            
+       
         default:
             
             arStatusView = "anatomy9"
