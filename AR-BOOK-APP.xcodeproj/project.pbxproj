@@ -47,6 +47,7 @@
 		C679A5222930AA97001CFF4A /* AR_BOOK_APPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5212930AA97001CFF4A /* AR_BOOK_APPUITests.swift */; };
 		C679A5242930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */; };
 		C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C679A5312930FA27001CFF4A /* GoogleService-Info.plist */; };
+		C693C2212934F03800138922 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693C2202934F03800138922 /* Theme.swift */; };
 		C6AE7FD8293386020031CE4C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FD7293386020031CE4C /* FirebaseAnalytics */; };
 		C6AE7FDA293386020031CE4C /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FD9293386020031CE4C /* FirebaseAppDistribution-Beta */; };
 		C6AE7FDC293386020031CE4C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FDB293386020031CE4C /* FirebaseAuth */; };
@@ -118,6 +119,7 @@
 		C679A5212930AA97001CFF4A /* AR_BOOK_APPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BOOK_APPUITests.swift; sourceTree = "<group>"; };
 		C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BOOK_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C679A5312930FA27001CFF4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C693C2202934F03800138922 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		C6AE7FE7293396920031CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,6 +197,7 @@
 		C652B1D72933814600A65212 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				C693C21F2934F02900138922 /* Extensions */,
 				C652B1D82933814B00A65212 /* Buttons */,
 			);
 			path = Theme;
@@ -437,6 +440,14 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		C693C21F2934F02900138922 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C693C2202934F03800138922 /* Theme.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -613,6 +624,7 @@
 				C652B1DA2933816100A65212 /* ButtonTheme.swift in Sources */,
 				C652B1E22933820300A65212 /* Globals.swift in Sources */,
 				C61B851229337FE600E0D5CA /* OnBoardingViewController.swift in Sources */,
+				C693C2212934F03800138922 /* Theme.swift in Sources */,
 				C67818D72933D7310062D4E4 /* SignInSignUpViewController.swift in Sources */,
 				C67818CD2933D47F0062D4E4 /* HomeCollectionViewCell.swift in Sources */,
 			);

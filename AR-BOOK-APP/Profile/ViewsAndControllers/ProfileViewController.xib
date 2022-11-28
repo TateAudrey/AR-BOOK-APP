@@ -66,7 +66,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="16" id="dk4-dL-0Kd"/>
                     </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                     <color key="textColor" red="0.95661884549999998" green="0.95558542010000003" blue="0.97366195919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

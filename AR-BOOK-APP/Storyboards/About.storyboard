@@ -10,7 +10,7 @@
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="AboutViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="info.bubble" catalog="system" selectedImage="info.bubble.fill" id="WQB-3S-fhh"/>
+                    <tabBarItem key="tabBarItem" title="About" image="info-unselected" selectedImage="info-selected" id="WQB-3S-fhh"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -19,7 +19,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="info.bubble" catalog="system" width="128" height="110"/>
-        <image name="info.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="info-selected" width="35" height="35"/>
+        <image name="info-unselected" width="35" height="35"/>
     </resources>
 </document>

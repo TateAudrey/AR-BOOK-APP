@@ -30,7 +30,9 @@
         <scene sceneID="PWy-bz-3p8">
             <objects>
                 <viewControllerPlaceholder storyboardName="Home" id="vID-Nq-q9p" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Voc-uH-LeJ"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="home-unselected" selectedImage="home-selected" id="Voc-uH-LeJ">
+                        <color key="badgeColor" red="0.95661884549999998" green="0.95558542010000003" blue="0.97366195919999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zCP-bC-egM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -40,7 +42,7 @@
         <scene sceneID="9F0-mp-LYG">
             <objects>
                 <viewControllerPlaceholder storyboardName="Profile" id="pr2-SD-AUh" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" selectedImage="person.fill" id="KsE-10-tVC"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="profile-unselected" selectedImage="profile-selected" id="KsE-10-tVC"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VLJ-sc-1fX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -50,7 +52,7 @@
         <scene sceneID="cUR-sM-5nE">
             <objects>
                 <viewControllerPlaceholder storyboardName="About" id="9Zy-Il-6Xu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="About" image="info.bubble" catalog="system" selectedImage="info.bubble.fill" id="IOV-c5-zIF"/>
+                    <tabBarItem key="tabBarItem" title="About" image="info-unselected" selectedImage="info-selected" id="IOV-c5-zIF"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mtj-AD-RM4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -58,11 +60,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="house" catalog="system" width="128" height="104"/>
-        <image name="house.fill" catalog="system" width="128" height="104"/>
-        <image name="info.bubble" catalog="system" width="128" height="110"/>
-        <image name="info.bubble.fill" catalog="system" width="128" height="110"/>
-        <image name="person" catalog="system" width="128" height="121"/>
-        <image name="person.fill" catalog="system" width="128" height="120"/>
+        <image name="home-selected" width="29.5" height="29.5"/>
+        <image name="home-unselected" width="29.5" height="29.5"/>
+        <image name="info-selected" width="35" height="35"/>
+        <image name="info-unselected" width="35" height="35"/>
+        <image name="profile-selected" width="24" height="24"/>
+        <image name="profile-unselected" width="24" height="24"/>
     </resources>
 </document>
