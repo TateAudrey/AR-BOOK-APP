@@ -46,28 +46,61 @@ class SignInViewController: UIViewController {
     
     @IBAction func signInButonClick(_ sender: Any) {
         
-        
-        
-        AppStateRepository.setloggedIn(value: true)
-        
-        let loading = UIElement.addLoadingView(view: view)
-        view.addSubview(loading)
-        view.isUserInteractionEnabled = false
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-           
+        if emailAddressTextField.text == "" && passwordTextField.text == "" {
             
-            loading.removeFromSuperview()
-            self.view.isUserInteractionEnabled = true
-            self.navigationController?.isNavigationBarHidden = false
+            // Create new Alert
+            let dialogMessage = UIAlertController(title: "Empty Fields", message: "Please enter the required information in the text fields", preferredStyle: .alert)
             
-            self.performSegue(withIdentifier: "gotoHome", sender: nil)
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Got It!", style: .default, handler: { (action) -> Void in
+                print("Ok button tapped")
+             })
             
-            guard let navigationController = self.navigationController else { return }
-            var navigationArray = navigationController.viewControllers // To get all UIViewController stack as Array
-            navigationArray.removeAll() // To remove previous UIViewController
-            self.navigationController?.viewControllers = navigationArray
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
             
+        } else if emailAddressTextField.text == "student1@email.com" && passwordTextField.text == "Qwerty123!" {
+            
+            AppStateRepository.setloggedIn(value: true)
+            
+            let loading = UIElement.addLoadingView(view: view)
+            view.addSubview(loading)
+            view.isUserInteractionEnabled = false
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+               
+                
+                loading.removeFromSuperview()
+                self.view.isUserInteractionEnabled = true
+                self.navigationController?.isNavigationBarHidden = false
+                
+                self.performSegue(withIdentifier: "gotoHome", sender: nil)
+                
+                guard let navigationController = self.navigationController else { return }
+                var navigationArray = navigationController.viewControllers // To get all UIViewController stack as Array
+                navigationArray.removeAll() // To remove previous UIViewController
+                self.navigationController?.viewControllers = navigationArray
+                
+            }
+        
+        } else {
+            
+            // Create new Alert
+            let dialogMessage = UIAlertController(title: "Invalid Details", message: "Sorry invalid details, please use registered credentials", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Got It!", style: .default, handler: { (action) -> Void in
+                print("Ok button tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
         }
         
         

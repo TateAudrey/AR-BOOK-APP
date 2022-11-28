@@ -29,6 +29,8 @@ class ProfileViewController: UIViewController {
         var signoutAlert = UIAlertController(title: "Sign Out?", message: "Are you sure you want to sign out?", preferredStyle: UIAlertController.Style.alert)
 
         signoutAlert.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { (action: UIAlertAction!) in
+            
+            AppStateRepository.setloggedIn(value: false)
           
             if let window = self.view.window {
                 window.rootViewController?.dismiss(animated: false, completion: nil)
