@@ -53,10 +53,23 @@
             <objects>
                 <viewController id="JR6-J0-dD4" customClass="PhysicsViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="scl-Ek-y6K"/>
+                    <connections>
+                        <segue destination="wOK-Hh-a4p" kind="show" identifier="showPhysics" id="C46-08-68W"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U2O-6v-hWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2894" y="788"/>
+            <point key="canvasLocation" x="2308" y="786"/>
+        </scene>
+        <!--Load PhysicsAR View Controller-->
+        <scene sceneID="eBY-Ro-duG">
+            <objects>
+                <viewController id="wOK-Hh-a4p" customClass="LoadPhysicsARViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="s7x-fT-Tbq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZw-ez-4lq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3442" y="778"/>
         </scene>
         <!--LoadAR View Controller-->
         <scene sceneID="3gW-Te-fFk">

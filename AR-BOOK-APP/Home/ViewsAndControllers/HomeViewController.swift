@@ -33,6 +33,8 @@ class HomeViewController: UIViewController {
         collectionView.register(UINib(nibName: reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: reuseIdentifier)
     }
 
+    
+   
    
 
 }

@@ -13,7 +13,7 @@ class PhysicsViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     let reuseIdentifier = "HomeDetailTableViewCell"
-    
+    var arStatusView: String!
     
     
     override func viewDidLoad() {
@@ -34,6 +34,13 @@ class PhysicsViewController: UIViewController {
         tableView.register(UINib(nibName: reuseIdentifier, bundle: .main), forCellReuseIdentifier: reuseIdentifier)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "showPhysics" {
+            let destination = segue.destination as! LoadPhysicsARViewController
+            destination.status = arStatusView
+        }
+    }
 
 }
 
@@ -56,6 +63,7 @@ extension PhysicsViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row == 0 {
             
             cell.titleLabel.text = "Cosmonaut Experience"
+            arStatusView = "cosmonaut"
         } else {
             cell.titleLabel.text = "Lunar Rover Experience"
         }
@@ -67,7 +75,7 @@ extension PhysicsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "gotoAnatomy", sender: nil)
+        performSegue(withIdentifier: "showPhysics", sender: nil)
     }
   
     

@@ -70,6 +70,10 @@
 		C6AF1D2829356AFD005EBB0C /* abdomen.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D2729356AFD005EBB0C /* abdomen.rcproject */; };
 		C6AF1D2B29356C4E005EBB0C /* PhysicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D2929356C4E005EBB0C /* PhysicsViewController.swift */; };
 		C6AF1D2C29356C4E005EBB0C /* PhysicsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6AF1D2A29356C4E005EBB0C /* PhysicsViewController.xib */; };
+		C6AF1D2F2935705D005EBB0C /* LoadPhysicsARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D2D2935705D005EBB0C /* LoadPhysicsARViewController.swift */; };
+		C6AF1D302935705D005EBB0C /* LoadPhysicsARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6AF1D2E2935705D005EBB0C /* LoadPhysicsARViewController.xib */; };
+		C6AF1D33293570E8005EBB0C /* Cosmonaut.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D31293570E7005EBB0C /* Cosmonaut.rcproject */; };
+		C6AF1D34293570E8005EBB0C /* lunarrover.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D32293570E7005EBB0C /* lunarrover.rcproject */; };
 		C6B111CD293542D30023966D /* HumanAnatomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */; };
 		C6B111CE293542D30023966D /* HumanAnatomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */; };
 		C6B111D1293542EA0023966D /* HumanAnatomyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */; };
@@ -158,6 +162,10 @@
 		C6AF1D2729356AFD005EBB0C /* abdomen.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = abdomen.rcproject; sourceTree = "<group>"; };
 		C6AF1D2929356C4E005EBB0C /* PhysicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsViewController.swift; sourceTree = "<group>"; };
 		C6AF1D2A29356C4E005EBB0C /* PhysicsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhysicsViewController.xib; sourceTree = "<group>"; };
+		C6AF1D2D2935705D005EBB0C /* LoadPhysicsARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadPhysicsARViewController.swift; sourceTree = "<group>"; };
+		C6AF1D2E2935705D005EBB0C /* LoadPhysicsARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadPhysicsARViewController.xib; sourceTree = "<group>"; };
+		C6AF1D31293570E7005EBB0C /* Cosmonaut.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Cosmonaut.rcproject; sourceTree = "<group>"; };
+		C6AF1D32293570E7005EBB0C /* lunarrover.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = lunarrover.rcproject; sourceTree = "<group>"; };
 		C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAnatomyViewController.swift; sourceTree = "<group>"; };
 		C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanAnatomyViewController.xib; sourceTree = "<group>"; };
 		C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAnatomyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -298,6 +306,8 @@
 				C6AF1D18293559B9005EBB0C /* LoadARViewController.xib */,
 				C6AF1D2929356C4E005EBB0C /* PhysicsViewController.swift */,
 				C6AF1D2A29356C4E005EBB0C /* PhysicsViewController.xib */,
+				C6AF1D2D2935705D005EBB0C /* LoadPhysicsARViewController.swift */,
+				C6AF1D2E2935705D005EBB0C /* LoadPhysicsARViewController.xib */,
 			);
 			path = ViewsAndControllers;
 			sourceTree = "<group>";
@@ -481,6 +491,8 @@
 		C679A5342930FA4F001CFF4A /* Experiences */ = {
 			isa = PBXGroup;
 			children = (
+				C6AF1D31293570E7005EBB0C /* Cosmonaut.rcproject */,
+				C6AF1D32293570E7005EBB0C /* lunarrover.rcproject */,
 				C6AF1D2729356AFD005EBB0C /* abdomen.rcproject */,
 				C6AF1D2529356961005EBB0C /* skin.rcproject */,
 				C6AF1D1F293563D6005EBB0C /* skull.rcproject */,
@@ -639,6 +651,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C679A50E2930AA97001CFF4A /* LaunchScreen.storyboard in Resources */,
+				C6AF1D302935705D005EBB0C /* LoadPhysicsARViewController.xib in Resources */,
 				C67818F829340BD70062D4E4 /* About.storyboard in Resources */,
 				C652B1E62933826B00A65212 /* OnBoardingCollectionViewCell.xib in Resources */,
 				C61B851329337FE600E0D5CA /* OnBoardingViewController.xib in Resources */,
@@ -702,6 +715,7 @@
 				C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */,
 				C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */,
 				C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */,
+				C6AF1D34293570E8005EBB0C /* lunarrover.rcproject in Sources */,
 				C6B111CD293542D30023966D /* HumanAnatomyViewController.swift in Sources */,
 				C67818F329340BA60062D4E4 /* AboutViewController.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
@@ -722,7 +736,9 @@
 				C693C2212934F03800138922 /* Theme.swift in Sources */,
 				C67818D72933D7310062D4E4 /* SignInSignUpViewController.swift in Sources */,
 				C67818CD2933D47F0062D4E4 /* HomeCollectionViewCell.swift in Sources */,
+				C6AF1D33293570E8005EBB0C /* Cosmonaut.rcproject in Sources */,
 				C6AF1D2B29356C4E005EBB0C /* PhysicsViewController.swift in Sources */,
+				C6AF1D2F2935705D005EBB0C /* LoadPhysicsARViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

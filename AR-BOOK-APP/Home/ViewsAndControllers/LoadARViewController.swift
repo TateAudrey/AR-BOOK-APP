@@ -35,28 +35,24 @@ class LoadARViewController: UIViewController {
            
             let arAnchor = try! Mouth.loadScene()
             
-            // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
         case "anatomy3":
            
             let arAnchor = try! Skeleton.loadScene()
             
-            // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
         case "anatomy4":
             
             let arAnchor = try! Woman.loadScene()
             
-            // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
         case "anatomy5":
            
             let arAnchor = try! Skull.loadScene()
             
-            // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
       
@@ -65,7 +61,6 @@ class LoadARViewController: UIViewController {
            
             let arAnchor = try! Skin.loadScene()
             
-            // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
             
        
@@ -74,7 +69,6 @@ class LoadARViewController: UIViewController {
             
             let arAnchor = try! Abdomen.loadScene()
             
-            // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
         }
 
