@@ -8,21 +8,22 @@
 import UIKit
 
 class HumanAnatomyViewController: UIViewController {
-
+    
     // MARK: - Outlets
     @IBOutlet weak var collectionView: UICollectionView!
     
     let reuseIdentifier = "HumanAnatomyCollectionViewCell"
     
+    var arStatusView: String!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setupDelegates()
         registerNIB()
     }
-
+    
     func setupDelegates(){
         
         collectionView.delegate = self
@@ -32,9 +33,17 @@ class HumanAnatomyViewController: UIViewController {
     func registerNIB(){
         collectionView.register(UINib(nibName: reuseIdentifier, bundle: .main), forCellWithReuseIdentifier: reuseIdentifier)
     }
-
-   
-
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "gotoARView" {
+            let destination = segue.destination as! LoadARViewController
+            destination.status = arStatusView
+        }
+    }
+    
+    
+    
 }
 
 
@@ -65,11 +74,41 @@ extension HumanAnatomyViewController: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-        if indexPath.row == 0 {
+        switch indexPath.row {
             
-            performSegue(withIdentifier: "gotoMouth", sender: nil)
+        case 0:
+            arStatusView = "anatomy2"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        case 1:
+            arStatusView = "anatomy3"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        case 2:
+            arStatusView = "anatomy4"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        case 3:
+            arStatusView = "anatomy5"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        case 4:
+            arStatusView = "anatomy6"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        case 5:
+            arStatusView = "anatomy7"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        case 6:
+            arStatusView = "anatomy8"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
+            
+        default:
+            
+            arStatusView = "anatomy9"
+            performSegue(withIdentifier: "gotoARView", sender: nil)
         }
-        
         
     }
 }

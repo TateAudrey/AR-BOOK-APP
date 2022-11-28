@@ -61,6 +61,9 @@
 		C6AE7FE4293386020031CE4C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FE3293386020031CE4C /* FirebaseStorage */; };
 		C6AE7FE6293387A40031CE4C /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */; };
 		C6AF1D14293552CC005EBB0C /* mouth.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D13293552CC005EBB0C /* mouth.rcproject */; };
+		C6AF1D19293559B9005EBB0C /* LoadARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D17293559B9005EBB0C /* LoadARViewController.swift */; };
+		C6AF1D1A293559B9005EBB0C /* LoadARViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6AF1D18293559B9005EBB0C /* LoadARViewController.xib */; };
+		C6AF1D1C29355F59005EBB0C /* skeleton.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C6AF1D1B29355F59005EBB0C /* skeleton.rcproject */; };
 		C6B111CD293542D30023966D /* HumanAnatomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */; };
 		C6B111CE293542D30023966D /* HumanAnatomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */; };
 		C6B111D1293542EA0023966D /* HumanAnatomyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */; };
@@ -140,6 +143,9 @@
 		C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		C6AE7FE7293396920031CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C6AF1D13293552CC005EBB0C /* mouth.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = mouth.rcproject; sourceTree = "<group>"; };
+		C6AF1D17293559B9005EBB0C /* LoadARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadARViewController.swift; sourceTree = "<group>"; };
+		C6AF1D18293559B9005EBB0C /* LoadARViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadARViewController.xib; sourceTree = "<group>"; };
+		C6AF1D1B29355F59005EBB0C /* skeleton.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = skeleton.rcproject; sourceTree = "<group>"; };
 		C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAnatomyViewController.swift; sourceTree = "<group>"; };
 		C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanAnatomyViewController.xib; sourceTree = "<group>"; };
 		C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAnatomyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -276,6 +282,8 @@
 				C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */,
 				C6B111DA29354D830023966D /* MouthViewController.swift */,
 				C6B111DB29354D830023966D /* MouthViewController.xib */,
+				C6AF1D17293559B9005EBB0C /* LoadARViewController.swift */,
+				C6AF1D18293559B9005EBB0C /* LoadARViewController.xib */,
 			);
 			path = ViewsAndControllers;
 			sourceTree = "<group>";
@@ -459,6 +467,7 @@
 		C679A5342930FA4F001CFF4A /* Experiences */ = {
 			isa = PBXGroup;
 			children = (
+				C6AF1D1B29355F59005EBB0C /* skeleton.rcproject */,
 				C6AF1D13293552CC005EBB0C /* mouth.rcproject */,
 				C679A5052930AA95001CFF4A /* Experience.rcproject */,
 			);
@@ -630,6 +639,7 @@
 				C67818EE293406FE0062D4E4 /* ProfileViewController.xib in Resources */,
 				C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */,
 				C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */,
+				C6AF1D1A293559B9005EBB0C /* LoadARViewController.xib in Resources */,
 				C67818E02933DF470062D4E4 /* LoadingView.xib in Resources */,
 				C6B111D2293542EA0023966D /* HumanAnatomyCollectionViewCell.xib in Resources */,
 				C67818F429340BA60062D4E4 /* AboutViewController.xib in Resources */,
@@ -666,6 +676,7 @@
 				C652B1E52933826B00A65212 /* OnBoardingCollectionViewCell.swift in Sources */,
 				C6B111D5293543C30023966D /* ViewTheme.swift in Sources */,
 				C6B111D72935444E0023966D /* AnatomyScreenItem.swift in Sources */,
+				C6AF1D19293559B9005EBB0C /* LoadARViewController.swift in Sources */,
 				C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */,
 				C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */,
 				C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */,
@@ -677,6 +688,7 @@
 				C652B1DD293381A500A65212 /* AppStateRepository.swift in Sources */,
 				C693C2242935000B00138922 /* HomeDetailViewController.swift in Sources */,
 				C67818DE2933DEE70062D4E4 /* LoadingView.swift in Sources */,
+				C6AF1D1C29355F59005EBB0C /* skeleton.rcproject in Sources */,
 				C6B111D1293542EA0023966D /* HumanAnatomyCollectionViewCell.swift in Sources */,
 				C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */,
 				C6B111DC29354D830023966D /* MouthViewController.swift in Sources */,
