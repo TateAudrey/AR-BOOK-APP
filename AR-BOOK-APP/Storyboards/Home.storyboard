@@ -15,6 +15,7 @@
                     <navigationItem key="navigationItem" title="Home" id="vSx-mx-Mh6"/>
                     <connections>
                         <segue destination="4ye-dr-ypr" kind="show" identifier="gotoDetails" id="ibW-xh-vXD"/>
+                        <segue destination="JR6-J0-dD4" kind="show" identifier="gotoPhysics" id="rHS-rj-IvQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -46,6 +47,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgG-cL-KO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2895" y="13"/>
+        </scene>
+        <!--Physics View Controller-->
+        <scene sceneID="XT8-I6-Pz9">
+            <objects>
+                <viewController id="JR6-J0-dD4" customClass="PhysicsViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="scl-Ek-y6K"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2O-6v-hWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2894" y="788"/>
         </scene>
         <!--LoadAR View Controller-->
         <scene sceneID="3gW-Te-fFk">

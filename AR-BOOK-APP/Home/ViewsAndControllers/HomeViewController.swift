@@ -102,19 +102,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
             
         } else {
             
-            // Create new Alert
-            let dialogMessage = UIAlertController(title: "Please Note", message: "This book access is out of scope for this AR VR Hackathon.", preferredStyle: .alert)
-            
-            // Create OK button with action handler
-            let ok = UIAlertAction(title: "Got It!", style: .default, handler: { (action) -> Void in
-                print("Ok button tapped")
-             })
-            
-            //Add OK button to a dialog message
-            dialogMessage.addAction(ok)
-
-            // Present Alert to
-            self.present(dialogMessage, animated: true, completion: nil)
+           performSegue(withIdentifier: "gotoPhysics", sender: nil)
             
         }
         
