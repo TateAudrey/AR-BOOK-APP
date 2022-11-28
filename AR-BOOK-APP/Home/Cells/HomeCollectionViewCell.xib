@@ -33,7 +33,7 @@
             <connections>
                 <outlet property="imageView" destination="ibz-sc-tqs" id="jbm-k6-9tg"/>
             </connections>
-            <point key="canvasLocation" x="92" y="-14"/>
+            <point key="canvasLocation" x="73.84615384615384" y="-23.459715639810426"/>
         </collectionViewCell>
     </objects>
     <resources>

@@ -50,7 +50,7 @@
                     <color key="tintColor" name="AccentColor"/>
                 </progressView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gpQ-fN-7EB">
-                    <rect key="frame" x="77.666666666666686" y="756" width="235" height="54"/>
+                    <rect key="frame" x="77.666666666666686" y="691" width="235" height="54"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="54" id="b0C-QI-waI"/>
                         <constraint firstAttribute="width" constant="235" id="q1H-m6-Cu6"/>
@@ -85,7 +85,7 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ofb-Qh-qDz" secondAttribute="trailing" constant="16" id="ahB-06-mJq"/>
                 <constraint firstItem="gpQ-fN-7EB" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jhm-8c-3Ha"/>
                 <constraint firstItem="2cA-l7-0jj" firstAttribute="top" secondItem="dOe-rq-VB4" secondAttribute="bottom" constant="21" id="m8S-qx-8Iu"/>
-                <constraint firstItem="gpQ-fN-7EB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="rmB-wl-PYR"/>
+                <constraint firstItem="gpQ-fN-7EB" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-65" id="rmB-wl-PYR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dOe-rq-VB4" secondAttribute="trailing" constant="16" id="rul-A6-hxZ"/>
                 <constraint firstItem="ofb-Qh-qDz" firstAttribute="top" secondItem="2cA-l7-0jj" secondAttribute="bottom" constant="54" id="wYV-Ry-ENa"/>
                 <constraint firstItem="l3a-on-JMx" firstAttribute="leading" secondItem="ofb-Qh-qDz" secondAttribute="leading" id="yQI-tw-a22"/>

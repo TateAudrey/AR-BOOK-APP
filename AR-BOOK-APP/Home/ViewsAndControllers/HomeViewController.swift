@@ -62,6 +62,61 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        if indexPath.row == 0 {
+            
+            
+            
+        } else if indexPath.row == 1 {
+            
+            // Create new Alert
+            let dialogMessage = UIAlertController(title: "Please Note", message: "This book access is out of scope for this AR VR Hackathon.", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Got It!", style: .default, handler: { (action) -> Void in
+                print("Ok button tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+
+            
+        } else if indexPath.row == 2 {
+            
+            // Create new Alert
+            let dialogMessage = UIAlertController(title: "Please Note", message: "This book access is out of scope for this AR VR Hackathon.", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Got It!", style: .default, handler: { (action) -> Void in
+                print("Ok button tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+            
+        } else {
+            
+            // Create new Alert
+            let dialogMessage = UIAlertController(title: "Please Note", message: "This book access is out of scope for this AR VR Hackathon.", preferredStyle: .alert)
+            
+            // Create OK button with action handler
+            let ok = UIAlertAction(title: "Got It!", style: .default, handler: { (action) -> Void in
+                print("Ok button tapped")
+             })
+            
+            //Add OK button to a dialog message
+            dialogMessage.addAction(ok)
+
+            // Present Alert to
+            self.present(dialogMessage, animated: true, completion: nil)
+            
+        }
+        
         
     }
 }
