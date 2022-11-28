@@ -16,7 +16,7 @@ class AnatomyScreenItem {
     init(imgName: String, title: String) {
         
         self.img = UIImage(named: imgName)!
-        self.title = ""
+        self.title = title
     }
     
     
@@ -28,7 +28,7 @@ class AnatomyScreenItem {
         AnatomyScreenItem(imgName: "anatomy6", title: "Human Anatomy"),
         AnatomyScreenItem(imgName: "anatomy7", title: "Human Skin"),
         AnatomyScreenItem(imgName: "anatomy8", title: "Inner Ear"),
-        AnatomyScreenItem(imgName: "anatomy9", title: "Abdomen"),
+        AnatomyScreenItem(imgName: "anatomy9", title: "Abdomen")
         
     ]
 }
