@@ -19,9 +19,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         initialViewController()
         FirebaseApp.configure()
         
-        let tabBarFont = UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.medium)
+        
+        
+        if #available(iOS 15, *) {
+            let navigationBarAppearance = UINavigationBarAppearance()
+            navigationBarAppearance.configureWithOpaqueBackground()
+            navigationBarAppearance.titleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.white
+            ]
             
-        UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: tabBarFont, NSAttributedString.Key.foregroundColor: UIColor(red: 190/255, green: 190/255, blue: 190/255, alpha: 1)], for: UIControl.State.normal)
+            navigationBarAppearance.largeTitleTextAttributes = [
+                NSAttributedString.Key.foregroundColor : UIColor.white
+            ]
+            navigationBarAppearance.backgroundColor = UIColor(named: "ButtonColor")
+            UINavigationBar.appearance().standardAppearance = navigationBarAppearance
+            UINavigationBar.appearance().compactAppearance = navigationBarAppearance
+            UINavigationBar.appearance().scrollEdgeAppearance = navigationBarAppearance
+            
+            let tabBarApperance = UITabBarAppearance()
+            tabBarApperance.configureWithOpaqueBackground()
+            tabBarApperance.backgroundColor = UIColor(named: "ButtonColor")
+            UITabBar.appearance().scrollEdgeAppearance = tabBarApperance
+            UITabBar.appearance().standardAppearance = tabBarApperance
+            
+            
+            let tabBarFont = UIFont.systemFont(ofSize: 10, weight: UIFont.Weight.medium)
+            
+            UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: tabBarFont, NSAttributedString.Key.foregroundColor: UIColor(red: 190/255, green: 190/255, blue: 190/255, alpha: 1)], for: UIControl.State.normal)
+        }
         
         return true
     }
@@ -58,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         
-       
+        
     }
     
     

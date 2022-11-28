@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HumanAnatomyCollectionViewCell" id="6HD-uF-jIe" customClass="HumanAnatomyCollectionViewCell" customModule="AR_BOOK_APP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="215"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="215"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="anatomy2" translatesAutoresizingMaskIntoConstraints="NO" id="fRz-uN-kYk">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="215"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DQp-jX-DYO">
+                        <rect key="frame" x="0.0" y="153" width="180" height="62"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historic Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmM-b2-1ui">
+                                <rect key="frame" x="8" y="16" width="164" height="26"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.81098989889999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="62" id="0yP-Dr-dHW"/>
+                            <constraint firstItem="SmM-b2-1ui" firstAttribute="top" secondItem="DQp-jX-DYO" secondAttribute="top" constant="16" id="4ZR-Nt-9d5"/>
+                            <constraint firstItem="SmM-b2-1ui" firstAttribute="leading" secondItem="DQp-jX-DYO" secondAttribute="leading" constant="8" id="9ay-9G-DP8"/>
+                            <constraint firstAttribute="bottom" secondItem="SmM-b2-1ui" secondAttribute="bottom" constant="20" id="We8-8y-FVz"/>
+                            <constraint firstAttribute="trailing" secondItem="SmM-b2-1ui" secondAttribute="trailing" constant="8" id="y8G-MJ-xxf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="fnD-ae-jG7"/>
+            <constraints>
+                <constraint firstItem="DQp-jX-DYO" firstAttribute="leading" secondItem="6HD-uF-jIe" secondAttribute="leading" id="9pX-ts-Kh4"/>
+                <constraint firstAttribute="bottom" secondItem="DQp-jX-DYO" secondAttribute="bottom" id="IB9-Mg-iTd"/>
+                <constraint firstItem="fRz-uN-kYk" firstAttribute="leading" secondItem="6HD-uF-jIe" secondAttribute="leading" id="fVv-yk-yAV"/>
+                <constraint firstAttribute="bottom" secondItem="fRz-uN-kYk" secondAttribute="bottom" id="laO-a9-EjF"/>
+                <constraint firstAttribute="trailing" secondItem="DQp-jX-DYO" secondAttribute="trailing" id="wkE-et-TBr"/>
+                <constraint firstAttribute="trailing" secondItem="fRz-uN-kYk" secondAttribute="trailing" id="yaP-NM-JfF"/>
+                <constraint firstItem="fRz-uN-kYk" firstAttribute="top" secondItem="6HD-uF-jIe" secondAttribute="top" id="zsR-37-VWB"/>
+            </constraints>
+            <size key="customSize" width="180" height="157"/>
+            <connections>
+                <outlet property="containerView" destination="DQp-jX-DYO" id="AWS-sY-XaC"/>
+                <outlet property="imageView" destination="fRz-uN-kYk" id="Wx4-R6-VxT"/>
+                <outlet property="titleLabel" destination="SmM-b2-1ui" id="HY7-0X-DEQ"/>
+            </connections>
+            <point key="canvasLocation" x="-100" y="-32"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="anatomy2" width="1100" height="1252"/>
+    </resources>
+</document>

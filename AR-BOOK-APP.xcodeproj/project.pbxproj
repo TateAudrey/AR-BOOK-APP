@@ -60,6 +60,12 @@
 		C6AE7FE2293386020031CE4C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FE1293386020031CE4C /* FirebaseFirestore */; };
 		C6AE7FE4293386020031CE4C /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FE3293386020031CE4C /* FirebaseStorage */; };
 		C6AE7FE6293387A40031CE4C /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */; };
+		C6B111CD293542D30023966D /* HumanAnatomyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */; };
+		C6B111CE293542D30023966D /* HumanAnatomyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */; };
+		C6B111D1293542EA0023966D /* HumanAnatomyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */; };
+		C6B111D2293542EA0023966D /* HumanAnatomyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B111D0293542EA0023966D /* HumanAnatomyCollectionViewCell.xib */; };
+		C6B111D5293543C30023966D /* ViewTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111D4293543C30023966D /* ViewTheme.swift */; };
+		C6B111D72935444E0023966D /* AnatomyScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111D62935444E0023966D /* AnatomyScreenItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +136,12 @@
 		C693C2272935012000138922 /* HomeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		C6AE7FE7293396920031CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAnatomyViewController.swift; sourceTree = "<group>"; };
+		C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanAnatomyViewController.xib; sourceTree = "<group>"; };
+		C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumanAnatomyCollectionViewCell.swift; sourceTree = "<group>"; };
+		C6B111D0293542EA0023966D /* HumanAnatomyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HumanAnatomyCollectionViewCell.xib; sourceTree = "<group>"; };
+		C6B111D4293543C30023966D /* ViewTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewTheme.swift; sourceTree = "<group>"; };
+		C6B111D62935444E0023966D /* AnatomyScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyScreenItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +217,7 @@
 		C652B1D72933814600A65212 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				C6B111D3293543B50023966D /* View */,
 				C693C21F2934F02900138922 /* Extensions */,
 				C652B1D82933814B00A65212 /* Buttons */,
 			);
@@ -253,6 +266,8 @@
 				C67818C72933D2BD0062D4E4 /* HomeViewController.xib */,
 				C693C2222935000B00138922 /* HomeDetailViewController.swift */,
 				C693C2232935000B00138922 /* HomeDetailViewController.xib */,
+				C6B111CB293542D30023966D /* HumanAnatomyViewController.swift */,
+				C6B111CC293542D30023966D /* HumanAnatomyViewController.xib */,
 			);
 			path = ViewsAndControllers;
 			sourceTree = "<group>";
@@ -264,6 +279,8 @@
 				C67818CC2933D47F0062D4E4 /* HomeCollectionViewCell.xib */,
 				C693C2262935012000138922 /* HomeDetailTableViewCell.swift */,
 				C693C2272935012000138922 /* HomeDetailTableViewCell.xib */,
+				C6B111CF293542EA0023966D /* HumanAnatomyCollectionViewCell.swift */,
+				C6B111D0293542EA0023966D /* HumanAnatomyCollectionViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -316,6 +333,7 @@
 			isa = PBXGroup;
 			children = (
 				C67818E7293402F50062D4E4 /* HomeScreenItem.swift */,
+				C6B111D62935444E0023966D /* AnatomyScreenItem.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -460,6 +478,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C6B111D3293543B50023966D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C6B111D4293543C30023966D /* ViewTheme.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -582,6 +608,7 @@
 				C61B851329337FE600E0D5CA /* OnBoardingViewController.xib in Resources */,
 				C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */,
 				C67818D82933D7310062D4E4 /* SignInSignUpViewController.xib in Resources */,
+				C6B111CE293542D30023966D /* HumanAnatomyViewController.xib in Resources */,
 				C693C2292935012000138922 /* HomeDetailTableViewCell.xib in Resources */,
 				C679A50B2930AA97001CFF4A /* Assets.xcassets in Resources */,
 				C67818F629340BC00062D4E4 /* Profile.storyboard in Resources */,
@@ -594,6 +621,7 @@
 				C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */,
 				C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */,
 				C67818E02933DF470062D4E4 /* LoadingView.xib in Resources */,
+				C6B111D2293542EA0023966D /* HumanAnatomyCollectionViewCell.xib in Resources */,
 				C67818F429340BA60062D4E4 /* AboutViewController.xib in Resources */,
 				C6AE7FE6293387A40031CE4C /* OnBoarding.storyboard in Resources */,
 				C67818C92933D2BD0062D4E4 /* HomeViewController.xib in Resources */,
@@ -626,16 +654,20 @@
 				C67818E32933E16A0062D4E4 /* UIElement.swift in Sources */,
 				C61B85162933808A00E0D5CA /* WelcomeViewController.swift in Sources */,
 				C652B1E52933826B00A65212 /* OnBoardingCollectionViewCell.swift in Sources */,
+				C6B111D5293543C30023966D /* ViewTheme.swift in Sources */,
+				C6B111D72935444E0023966D /* AnatomyScreenItem.swift in Sources */,
 				C679A5022930AA95001CFF4A /* AppDelegate.swift in Sources */,
 				C67818ED293406FE0062D4E4 /* ProfileViewController.swift in Sources */,
 				C67818E8293402F50062D4E4 /* HomeScreenItem.swift in Sources */,
 				C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */,
+				C6B111CD293542D30023966D /* HumanAnatomyViewController.swift in Sources */,
 				C67818F329340BA60062D4E4 /* AboutViewController.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
 				C693C2282935012000138922 /* HomeDetailTableViewCell.swift in Sources */,
 				C652B1DD293381A500A65212 /* AppStateRepository.swift in Sources */,
 				C693C2242935000B00138922 /* HomeDetailViewController.swift in Sources */,
 				C67818DE2933DEE70062D4E4 /* LoadingView.swift in Sources */,
+				C6B111D1293542EA0023966D /* HumanAnatomyCollectionViewCell.swift in Sources */,
 				C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */,
 				C652B1DA2933816100A65212 /* ButtonTheme.swift in Sources */,
 				C652B1E22933820300A65212 /* Globals.swift in Sources */,
