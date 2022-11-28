@@ -60,6 +60,11 @@ class SignInViewController: UIViewController {
             
             self.performSegue(withIdentifier: "gotoHome", sender: nil)
             
+            guard let navigationController = self.navigationController else { return }
+            var navigationArray = navigationController.viewControllers // To get all UIViewController stack as Array
+            navigationArray.removeAll() // To remove previous UIViewController
+            self.navigationController?.viewControllers = navigationArray
+            
         }
         
         

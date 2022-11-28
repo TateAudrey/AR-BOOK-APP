@@ -16,7 +16,7 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        progressView.transform = progressView.transform.scaledBy(x: 1, y: 20)
+        progressView.transform = progressView.transform.scaledBy(x: 1, y: 2)
         
     }
 
