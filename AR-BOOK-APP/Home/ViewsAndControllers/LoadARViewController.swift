@@ -72,7 +72,7 @@ class LoadARViewController: UIViewController {
             
         default:
             
-            let arAnchor = try! Mouth.loadScene()
+            let arAnchor = try! Abdomen.loadScene()
             
             // Add the herero anchor to the scene
             arView.scene.anchors.append(arAnchor)
