@@ -58,6 +58,8 @@ class OnBoardingViewController: UIViewController {
             
             if pageControl.currentPage == 2 {
                 
+                AppStateRepository.setDidOnboarding(value: true)
+                
                 var newViewController : UIViewController
                 newViewController  = (UIStoryboard(name: "Registration", bundle: nil).instantiateViewController(withIdentifier: "RegistrationID"))
                 self.view.removeFromSuperview()

@@ -10,7 +10,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="d4Q-tK-CGS">
             <objects>
-                <tabBarController modalPresentationStyle="fullScreen" id="uHE-Wz-ihw" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainID" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uHE-Wz-ihw" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="c4L-z5-h5c">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -63,7 +63,7 @@
         <image name="home-selected" width="29.5" height="29.5"/>
         <image name="home-unselected" width="29.5" height="29.5"/>
         <image name="info-selected" width="35" height="35"/>
-        <image name="info-unselected" width="35" height="35"/>
+        <image name="info-unselected" width="52.5" height="52.5"/>
         <image name="profile-selected" width="24" height="24"/>
         <image name="profile-unselected" width="24" height="24"/>
     </resources>

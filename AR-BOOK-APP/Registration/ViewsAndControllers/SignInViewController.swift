@@ -47,6 +47,9 @@ class SignInViewController: UIViewController {
     @IBAction func signInButonClick(_ sender: Any) {
         
         
+        
+        AppStateRepository.setloggedIn(value: true)
+        
         let loading = UIElement.addLoadingView(view: view)
         view.addSubview(loading)
         view.isUserInteractionEnabled = false

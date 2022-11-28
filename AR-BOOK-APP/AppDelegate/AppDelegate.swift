@@ -33,10 +33,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var initialViewController : UIViewController?
         
         
-        initialViewController  = (UIStoryboard(name: "OnBoarding", bundle: nil).instantiateViewController(withIdentifier: "OnBoardingID"))
+        if AppStateRepository.didOnboarding() {
+            
+            initialViewController  = (UIStoryboard(name: "Registration", bundle: nil).instantiateViewController(withIdentifier: "RegistrationID"))
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+            
+            if AppStateRepository.loggedIn() {
+                
+                initialViewController  = (UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "MainID"))
+                
+                self.window?.rootViewController = initialViewController
+                self.window?.makeKeyAndVisible()
+                
+            }
+            
+        }   else {
+            
+            initialViewController  = (UIStoryboard(name: "OnBoarding", bundle: nil).instantiateViewController(withIdentifier: "OnBoardingID"))
+            
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        }
         
-        self.window?.rootViewController = initialViewController
-        self.window?.makeKeyAndVisible()
+        
+       
     }
     
     

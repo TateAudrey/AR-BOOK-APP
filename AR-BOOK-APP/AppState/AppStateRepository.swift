@@ -12,6 +12,7 @@ public class AppStateRepository {
     
     private init(){}
     
+    
     public static func setDidOnboarding(value: Bool) {
         UserDefaults.standard.set(value, forKey: UserDefaultConstants.didOnBoarding)
     }
