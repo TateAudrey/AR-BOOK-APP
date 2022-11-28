@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
             <connections>
                 <outlet property="progressView" destination="ofb-Qh-qDz" id="QsA-zb-LL7"/>
+                <outlet property="signoutButton" destination="gpQ-fN-7EB" id="bFZ-ey-dve"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -60,6 +61,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Sign Out">
                         <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="signoutButtonClick:" destination="-1" eventType="touchUpInside" id="UaU-Ko-vmw"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My learning progress" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l3a-on-JMx">
                     <rect key="frame" x="23" y="327" width="351" height="16"/>
