@@ -20,8 +20,19 @@ class SignInViewController: UIViewController {
         super.viewDidLoad()
 
         setupUI()
+        
+        #if DEBUG
+        
+        emailAddressTextField.text = "student1@email.com"
+        passwordTextField.text = "Qwerty123!"
+        #endif
+        
     }
 
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        
+        view.endEditing(true)
+    }
     
     func setupUI(){
         

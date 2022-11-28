@@ -65,7 +65,10 @@ extension HumanAnatomyViewController: UICollectionViewDelegate, UICollectionView
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
-       
+        if indexPath.row == 0 {
+            
+            performSegue(withIdentifier: "gotoMouth", sender: nil)
+        }
         
         
     }

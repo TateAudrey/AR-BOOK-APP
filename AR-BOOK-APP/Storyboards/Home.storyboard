@@ -39,10 +39,23 @@
             <objects>
                 <viewController id="CTP-gn-EMl" customClass="HumanAnatomyViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Human Anatomy" id="r6f-CK-qav"/>
+                    <connections>
+                        <segue destination="n8y-Gu-gAc" kind="show" identifier="gotoMouth" id="1Xe-3X-jPy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgG-cL-KO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2895" y="13"/>
+        </scene>
+        <!--Mouth View Controller-->
+        <scene sceneID="3gW-Te-fFk">
+            <objects>
+                <viewController id="n8y-Gu-gAc" customClass="MouthViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g0f-a5-TNm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaV-hS-J3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3912" y="-303"/>
         </scene>
         <!--Home-->
         <scene sceneID="cBC-LO-oQ7">
