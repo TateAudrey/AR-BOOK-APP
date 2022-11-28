@@ -48,6 +48,10 @@
 		C679A5242930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */; };
 		C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C679A5312930FA27001CFF4A /* GoogleService-Info.plist */; };
 		C693C2212934F03800138922 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693C2202934F03800138922 /* Theme.swift */; };
+		C693C2242935000B00138922 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693C2222935000B00138922 /* HomeDetailViewController.swift */; };
+		C693C2252935000B00138922 /* HomeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C693C2232935000B00138922 /* HomeDetailViewController.xib */; };
+		C693C2282935012000138922 /* HomeDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C693C2262935012000138922 /* HomeDetailTableViewCell.swift */; };
+		C693C2292935012000138922 /* HomeDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C693C2272935012000138922 /* HomeDetailTableViewCell.xib */; };
 		C6AE7FD8293386020031CE4C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FD7293386020031CE4C /* FirebaseAnalytics */; };
 		C6AE7FDA293386020031CE4C /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FD9293386020031CE4C /* FirebaseAppDistribution-Beta */; };
 		C6AE7FDC293386020031CE4C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C6AE7FDB293386020031CE4C /* FirebaseAuth */; };
@@ -120,6 +124,10 @@
 		C679A5232930AA97001CFF4A /* AR_BOOK_APPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AR_BOOK_APPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C679A5312930FA27001CFF4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C693C2202934F03800138922 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		C693C2222935000B00138922 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		C693C2232935000B00138922 /* HomeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailViewController.xib; sourceTree = "<group>"; };
+		C693C2262935012000138922 /* HomeDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailTableViewCell.swift; sourceTree = "<group>"; };
+		C693C2272935012000138922 /* HomeDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeDetailTableViewCell.xib; sourceTree = "<group>"; };
 		C6AE7FE5293387A40031CE4C /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		C6AE7FE7293396920031CE4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -243,6 +251,8 @@
 			children = (
 				C67818C62933D2BD0062D4E4 /* HomeViewController.swift */,
 				C67818C72933D2BD0062D4E4 /* HomeViewController.xib */,
+				C693C2222935000B00138922 /* HomeDetailViewController.swift */,
+				C693C2232935000B00138922 /* HomeDetailViewController.xib */,
 			);
 			path = ViewsAndControllers;
 			sourceTree = "<group>";
@@ -252,6 +262,8 @@
 			children = (
 				C67818CB2933D47F0062D4E4 /* HomeCollectionViewCell.swift */,
 				C67818CC2933D47F0062D4E4 /* HomeCollectionViewCell.xib */,
+				C693C2262935012000138922 /* HomeDetailTableViewCell.swift */,
+				C693C2272935012000138922 /* HomeDetailTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -570,12 +582,14 @@
 				C61B851329337FE600E0D5CA /* OnBoardingViewController.xib in Resources */,
 				C679A5322930FA27001CFF4A /* GoogleService-Info.plist in Resources */,
 				C67818D82933D7310062D4E4 /* SignInSignUpViewController.xib in Resources */,
+				C693C2292935012000138922 /* HomeDetailTableViewCell.xib in Resources */,
 				C679A50B2930AA97001CFF4A /* Assets.xcassets in Resources */,
 				C67818F629340BC00062D4E4 /* Profile.storyboard in Resources */,
 				C67818E52933FFB60062D4E4 /* Home.storyboard in Resources */,
 				C67818CE2933D47F0062D4E4 /* HomeCollectionViewCell.xib in Resources */,
 				C679A5092930AA95001CFF4A /* Main.storyboard in Resources */,
 				C61B85172933808A00E0D5CA /* WelcomeViewController.xib in Resources */,
+				C693C2252935000B00138922 /* HomeDetailViewController.xib in Resources */,
 				C67818EE293406FE0062D4E4 /* ProfileViewController.xib in Resources */,
 				C67818D42933D4FE0062D4E4 /* SignInViewController.xib in Resources */,
 				C67818DA2933D90F0062D4E4 /* Registration.storyboard in Resources */,
@@ -618,7 +632,9 @@
 				C67818D32933D4FE0062D4E4 /* SignInViewController.swift in Sources */,
 				C67818F329340BA60062D4E4 /* AboutViewController.swift in Sources */,
 				C679A5062930AA95001CFF4A /* Experience.rcproject in Sources */,
+				C693C2282935012000138922 /* HomeDetailTableViewCell.swift in Sources */,
 				C652B1DD293381A500A65212 /* AppStateRepository.swift in Sources */,
+				C693C2242935000B00138922 /* HomeDetailViewController.swift in Sources */,
 				C67818DE2933DEE70062D4E4 /* LoadingView.swift in Sources */,
 				C67818C82933D2BD0062D4E4 /* HomeViewController.swift in Sources */,
 				C652B1DA2933816100A65212 /* ButtonTheme.swift in Sources */,

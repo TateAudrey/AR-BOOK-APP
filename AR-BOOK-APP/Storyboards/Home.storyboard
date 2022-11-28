@@ -13,10 +13,23 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="HomeViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="Home" id="vSx-mx-Mh6"/>
+                    <connections>
+                        <segue destination="4ye-dr-ypr" kind="show" identifier="gotoDetails" id="ibW-xh-vXD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066.1538461538462" y="3.5545023696682461"/>
+        </scene>
+        <!--Home Detail View Controller-->
+        <scene sceneID="VYY-Fm-S0N">
+            <objects>
+                <viewController id="4ye-dr-ypr" customClass="HomeDetailViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="V0n-cm-T3d"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4CX-jJ-FOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1971" y="-3"/>
         </scene>
         <!--Home-->
         <scene sceneID="cBC-LO-oQ7">
@@ -50,7 +63,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home-selected" width="30" height="30"/>
-        <image name="home-unselected" width="30" height="30"/>
+        <image name="home-selected" width="29.333333969116211" height="29.333333969116211"/>
+        <image name="home-unselected" width="29.333333969116211" height="29.333333969116211"/>
     </resources>
 </document>

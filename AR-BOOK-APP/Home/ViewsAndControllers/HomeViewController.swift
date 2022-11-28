@@ -64,6 +64,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         
         if indexPath.row == 0 {
             
+            performSegue(withIdentifier: "gotoDetails", sender: nil)
             
             
         } else if indexPath.row == 1 {
