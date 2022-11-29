@@ -82,6 +82,7 @@
 		C6B111D72935444E0023966D /* AnatomyScreenItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111D62935444E0023966D /* AnatomyScreenItem.swift */; };
 		C6B111DC29354D830023966D /* MouthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B111DA29354D830023966D /* MouthViewController.swift */; };
 		C6B111DD29354D830023966D /* MouthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C6B111DB29354D830023966D /* MouthViewController.xib */; };
+		C6FEBFE32935E557009AFB5D /* spacehab.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = C6FEBFE22935E557009AFB5D /* spacehab.rcproject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -174,6 +175,7 @@
 		C6B111D62935444E0023966D /* AnatomyScreenItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnatomyScreenItem.swift; sourceTree = "<group>"; };
 		C6B111DA29354D830023966D /* MouthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MouthViewController.swift; sourceTree = "<group>"; };
 		C6B111DB29354D830023966D /* MouthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MouthViewController.xib; sourceTree = "<group>"; };
+		C6FEBFE22935E557009AFB5D /* spacehab.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = spacehab.rcproject; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +493,7 @@
 		C679A5342930FA4F001CFF4A /* Experiences */ = {
 			isa = PBXGroup;
 			children = (
+				C6FEBFE22935E557009AFB5D /* spacehab.rcproject */,
 				C6AF1D31293570E7005EBB0C /* Cosmonaut.rcproject */,
 				C6AF1D32293570E7005EBB0C /* lunarrover.rcproject */,
 				C6AF1D2729356AFD005EBB0C /* abdomen.rcproject */,
@@ -706,6 +709,7 @@
 				C67818E32933E16A0062D4E4 /* UIElement.swift in Sources */,
 				C6AF1D1E29356063005EBB0C /* woman.rcproject in Sources */,
 				C61B85162933808A00E0D5CA /* WelcomeViewController.swift in Sources */,
+				C6FEBFE32935E557009AFB5D /* spacehab.rcproject in Sources */,
 				C652B1E52933826B00A65212 /* OnBoardingCollectionViewCell.swift in Sources */,
 				C6B111D5293543C30023966D /* ViewTheme.swift in Sources */,
 				C6AF1D2829356AFD005EBB0C /* abdomen.rcproject in Sources */,

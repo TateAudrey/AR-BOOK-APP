@@ -51,7 +51,7 @@ extension PhysicsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 2
+        return 3
     }
     
     
@@ -64,8 +64,17 @@ extension PhysicsViewController: UITableViewDelegate, UITableViewDataSource {
             
             cell.titleLabel.text = "Cosmonaut Experience"
             arStatusView = "cosmonaut"
-        } else {
+            
+        } else if indexPath.row == 1 {
+            
+            arStatusView = "lunarrover"
             cell.titleLabel.text = "Lunar Rover Experience"
+            
+        } else {
+            
+            arStatusView = "spacehab"
+            cell.titleLabel.text = "Jameson Lunar Base Habitat Experience"
+            
         }
         
         

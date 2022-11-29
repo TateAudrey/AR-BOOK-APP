@@ -34,9 +34,14 @@ class LoadPhysicsARViewController: UIViewController {
             
             arView.scene.anchors.append(arAnchor)
             
-        } else {
+        } else if status == "lunarrover"  {
             
             let arAnchor = try! Lunarrover.loadScene()
+            
+            arView.scene.anchors.append(arAnchor)
+            
+        } else {
+            let arAnchor = try! Spacehab.loadScene()
             
             arView.scene.anchors.append(arAnchor)
         }
