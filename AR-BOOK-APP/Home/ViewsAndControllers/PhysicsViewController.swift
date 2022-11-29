@@ -69,11 +69,13 @@ extension PhysicsViewController: UITableViewDelegate, UITableViewDataSource {
             
             arStatusView = "lunarrover"
             cell.titleLabel.text = "Lunar Rover Experience"
+            arStatusView = "lunarrover"
             
         } else {
             
             arStatusView = "spacehab"
             cell.titleLabel.text = "Jameson Lunar Base Habitat Experience"
+            arStatusView = "spacehab"
             
         }
         
@@ -84,7 +86,24 @@ extension PhysicsViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        performSegue(withIdentifier: "showPhysics", sender: nil)
+        if indexPath.row == 0 {
+            
+            arStatusView = "cosmonaut"
+            performSegue(withIdentifier: "showPhysics", sender: nil)
+            
+        } else if indexPath.row == 1 {
+            
+            arStatusView = "lunarrover"
+            performSegue(withIdentifier: "showPhysics", sender: nil)
+            
+        } else {
+            
+            arStatusView = "spacehab"
+            performSegue(withIdentifier: "showPhysics", sender: nil)
+            
+        }
+        
+       
     }
   
     
