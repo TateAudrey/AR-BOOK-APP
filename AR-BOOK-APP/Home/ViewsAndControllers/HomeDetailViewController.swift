@@ -59,6 +59,18 @@ extension HomeDetailViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if indexPath.row == 0 {
+            performSegue(withIdentifier: "gotoAnatomy", sender: nil)
+        } else {
+            
+            performSegue(withIdentifier: "gotoPhysics", sender: nil)
+        }
+        
+        
+    }
   
     
     

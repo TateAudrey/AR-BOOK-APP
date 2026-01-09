@@ -1,0 +1,12 @@
+[
+  {
+    "libraryIdentifier" : "1f54f49c7408ab89dcca44abbd3d543d",
+    "format" : "image",
+    "displayName" : "cosmonaut.png"
+  },
+  {
+    "libraryIdentifier" : "67269e2fe922c7eaa1d2dbe33642b735",
+    "format" : "model",
+    "displayName" : "CosmonautSuit_en.reality"
+  }
+]

@@ -85,6 +85,7 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" red="0.047261148689999997" green="0.10158396510000001" blue="0.12941688300000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <gestureRecognizers/>
             <constraints>
                 <constraint firstItem="9Nv-DN-pxS" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="1xk-b0-yS7"/>
                 <constraint firstItem="9Nv-DN-pxS" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="8HN-Si-Hwh"/>
@@ -101,8 +102,16 @@
                 <constraint firstItem="dFz-11-mIf" firstAttribute="top" secondItem="9Nv-DN-pxS" secondAttribute="bottom" constant="38" id="rDD-fr-MSM"/>
                 <constraint firstItem="GND-du-vdH" firstAttribute="leading" secondItem="inh-gJ-TNY" secondAttribute="leading" id="xej-Ux-vhC"/>
             </constraints>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="exw-6U-OPV" appends="YES" id="7BY-qM-xsO"/>
+            </connections>
             <point key="canvasLocation" x="-263" y="6"/>
         </view>
+        <tapGestureRecognizer id="exw-6U-OPV">
+            <connections>
+                <action selector="dismissKeyboard:" destination="-1" id="1ie-Q7-kH5"/>
+            </connections>
+        </tapGestureRecognizer>
     </objects>
     <resources>
         <image name="no-bg-logo" width="1024" height="1024"/>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HumanAnatomyViewController" customModule="AR_BOOK_APP" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="2LG-pv-7EF" id="csN-8A-QZO"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2LG-pv-7EF">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="X5f-Pb-Z3G">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="ButtonColor"/>
+            <constraints>
+                <constraint firstItem="2LG-pv-7EF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="4zp-gp-Eja"/>
+                <constraint firstItem="2LG-pv-7EF" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="jLK-6E-uLP"/>
+                <constraint firstAttribute="bottom" secondItem="2LG-pv-7EF" secondAttribute="bottom" id="q0J-2c-9No"/>
+                <constraint firstItem="2LG-pv-7EF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="r6y-oV-8Lh"/>
+            </constraints>
+            <point key="canvasLocation" x="-26.153846153846153" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="ButtonColor">
+            <color red="0.046999998390674591" green="0.10199999809265137" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

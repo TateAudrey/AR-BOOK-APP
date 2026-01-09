@@ -15,21 +15,71 @@
                     <navigationItem key="navigationItem" title="Home" id="vSx-mx-Mh6"/>
                     <connections>
                         <segue destination="4ye-dr-ypr" kind="show" identifier="gotoDetails" id="ibW-xh-vXD"/>
+                        <segue destination="JR6-J0-dD4" kind="show" identifier="gotoPhysics" id="rHS-rj-IvQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1066.1538461538462" y="3.5545023696682461"/>
         </scene>
-        <!--Home Detail View Controller-->
+        <!--Home Detail-->
         <scene sceneID="VYY-Fm-S0N">
             <objects>
                 <viewController id="4ye-dr-ypr" customClass="HomeDetailViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="V0n-cm-T3d"/>
+                    <navigationItem key="navigationItem" title="Home Detail" id="V0n-cm-T3d"/>
+                    <connections>
+                        <segue destination="CTP-gn-EMl" kind="show" identifier="gotoAnatomy" id="Wx8-6g-rzk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4CX-jJ-FOi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1971" y="-3"/>
+        </scene>
+        <!--Human Anatomy-->
+        <scene sceneID="D3s-aJ-PcE">
+            <objects>
+                <viewController id="CTP-gn-EMl" customClass="HumanAnatomyViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="Human Anatomy" id="r6f-CK-qav"/>
+                    <connections>
+                        <segue destination="n8y-Gu-gAc" kind="show" identifier="gotoARView" id="1Xe-3X-jPy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qgG-cL-KO4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2895" y="13"/>
+        </scene>
+        <!--Physics View Controller-->
+        <scene sceneID="XT8-I6-Pz9">
+            <objects>
+                <viewController id="JR6-J0-dD4" customClass="PhysicsViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="scl-Ek-y6K"/>
+                    <connections>
+                        <segue destination="wOK-Hh-a4p" kind="show" identifier="showPhysics" id="C46-08-68W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U2O-6v-hWQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2308" y="786"/>
+        </scene>
+        <!--Load PhysicsAR View Controller-->
+        <scene sceneID="eBY-Ro-duG">
+            <objects>
+                <viewController id="wOK-Hh-a4p" customClass="LoadPhysicsARViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="s7x-fT-Tbq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VZw-ez-4lq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3442" y="778"/>
+        </scene>
+        <!--LoadAR View Controller-->
+        <scene sceneID="3gW-Te-fFk">
+            <objects>
+                <viewController id="n8y-Gu-gAc" customClass="LoadARViewController" customModule="AR_BOOK_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="g0f-a5-TNm"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaV-hS-J3B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3912" y="-303"/>
         </scene>
         <!--Home-->
         <scene sceneID="cBC-LO-oQ7">

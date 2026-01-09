@@ -9,6 +9,7 @@ import UIKit
 
 class HomeDetailTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
     }
